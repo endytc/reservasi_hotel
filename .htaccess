@@ -1,0 +1,16 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+php_value "short_open_tag" "on"
+
+# forbid access to files and folders under app
+RewriteRule ^app/.*$ - [F,L]
+RewriteRule ^core/.*$ - [F,L]
+
+# rewrite to index.php
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^.*$ index.php [NC,L]
+Redirect permanent inventory/penjualan /transaksi/penjualan 

@@ -1,0 +1,16 @@
+#mainContainer {
+	width:1024px;
+	margin:0 auto;
+	background:#fff;
+	-webkit-box-shadow:0 0 4px 0 rgba(0,0,0,0.2);
+	-moz-box-shadow:0 0 4px 0 rgba(0,0,0,0.2);
+	box-shadow:0 0 4px 0 rgba(0,0,0,0.2);
+}
+
+/*========================================================================
+======================== Begain the media query ==========================
+========================================================================*/
+@media (max-width: 979px) { #mainContainer { width:100%;} }
+@media (min-width: 768px) and (max-width: 979px) { #mainContainer { width:100%; } }
+@media (max-width: 767px) { #mainContainer { width:100%; } }
+@media (max-width: 480px) { #mainContainer { width:100%;} }

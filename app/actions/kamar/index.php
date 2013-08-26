@@ -10,7 +10,7 @@ include 'app/actions/kamar/top.php';
     <div class="row">
         <ul class="hProductItems clearfix">
             <?php foreach($kelasQry as $kelas):?>
-            <li class="span3 clearfix">
+            <li class="span4 clearfix">
                 <div class="thumbnail">
                     <a href="#"><img src="<?php echo app_base_url().'/'.$kelas['gambar']?>" style="height: 200px" alt=""></a>
                 </div>

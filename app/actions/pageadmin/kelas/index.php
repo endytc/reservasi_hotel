@@ -31,7 +31,7 @@
         <td>
             <?php
                 if($data['gambar']!=''){
-                    ?><a class="kelas-fancybox" href="<?php echo app_base_url().'/'.$data['gambar'];?>"><img src="<?php echo app_base_url().'/'.$data['gambar'];?>" width="40"></a><?php
+                    ?><a class="kelas-fancybox" target="_blank"href="<?php echo app_base_url().'/'.$data['gambar'];?>"><img src="<?php echo app_base_url().'/'.$data['gambar'];?>" width="40"></a><?php
                 }else{
                     ?><img src="<?php echo app_base_url().'/upload/not-found.png';?>" width="40"><?php
                 }
@@ -51,6 +51,6 @@
 <?php echo $pagging?>
 <script type="text/javascript">
 $(document).ready(function(){
-    $('.kelas-fancybox').fancybox({rel:'gal'});
+//    $('.kelas-fancybox').fancybox({rel:'gal'});
 })
 </script>

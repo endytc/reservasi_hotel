@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="<?php echo app_base_url() ?>/assets/css/customize.css">
     <link rel="stylesheet" href="<?php echo app_base_url() ?>/assets/css/font-awesome.css">
     <link rel="stylesheet" href="<?php echo app_base_url() ?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo app_base_url() ?>/assets/css/charisma.css">
     <link rel="stylesheet" href="<?php echo app_base_url() ?>/assets/css/jquery.validate.css">
     <!--<link rel="stylesheet" href="<?php echo app_base_url() ?>/assets/css/flexslider.css">-->
     <link rel="stylesheet" href="<?php echo app_base_url() ?>/assets/js/fancybox/jquery.fancybox.css">
@@ -38,17 +39,17 @@
     <script src="<?php echo app_base_url() ?>/assets/js/jquery.validate.js"></script>
 </head>
 
-<body style="background: #ffffff">
+<body style="background: #d9d9d9;">
     <div class="container-fluid">
         <div class="row-fluid">
 
             <div class="row-fluid">
-                <div class="span12 center login-header">
-                    <h2>Login Admin</h2>
+                <div class="span12 center HeaderTitle login-header">
+                    <h2>Login Admin/Operator</h2>
                 </div><!--/span-->
             </div><!--/row-->
 
-            <div class="row-fluid">
+            <div class="row-fluid" >
                 <div class="well span5 center login-box">
                     <div class="alert alert-info">
                         Please login with your Username and Password.
@@ -67,13 +68,8 @@
                             </div>
                             <div class="clearfix"></div>
 
-                            <div class="input-prepend">
-                                <label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label>
-                            </div>
-                            <div class="clearfix"></div>
-
                             <p class="center span5">
-                                <button type="submit" class="btn btn-primary">Login</button>
+                                <button type="submit" class="btn btn-info">Login</button>
                             </p>
                         </fieldset>
                     </form>

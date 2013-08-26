@@ -476,15 +476,16 @@ function getMenuAdmin(){
     if(is_admin())
         return array(
             array('title'=>'Admin','url'=>'admin'),
-            array('title'=>'Fasilitas','url'=>'fasilitas'),
+            array('title'=>'Operator','url'=>'operator'),
             array('title'=>'Kategori Fasilitas','url'=>'kategori_fasilitas'),
-            array('title'=>'Kamar','url'=>'kamar'),
+            array('title'=>'Fasilitas','url'=>'fasilitas'),
             array('title'=>'Kelas','url'=>'kelas'),
+            array('title'=>'Kamar','url'=>'kamar'),
             array('title'=>'Pengunjung','url'=>'pengunjung'),
             array('title'=>'Bank','url'=>'bank'),
-            array('title'=>'Setting','url'=>'setting'),
-            array('title'=>'Artikel','url'=>'artikel'),
             array('title'=>'Kategori Artikel','url'=>'kategori_artikel'),
+            array('title'=>'Artikel','url'=>'artikel'),
+            array('title'=>'Setting','url'=>'setting'),
             array('title'=>'Logout','url'=>'login/logout'),
         );
     else if(is_operator()){

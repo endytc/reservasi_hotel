@@ -72,10 +72,12 @@
 			<div class="row">
 				<div class="span12">
 					<ul class="payments inline pull-right">
-						<li class="visia"></li>
-						<li class="paypal"></li>
-						<li class="electron"></li>
-						<li class="discover"></li>
+                                            <?php 
+                                            $bank=  _select_arr("select * from bank");
+                                            foreach ($bank as $value) {
+                                                echo "<li><a href=".  app_base_url('bank?id='.$value['id'])." target='ajax-modal'><img src='".  app_base_url($value['gambar'])."' width=30 height=20></a></li>";
+                                            }
+                                            ?>
 					</ul>
 					<p>© Copyrights 2012 for shopfine.com</p>
 				</div>
@@ -126,8 +128,8 @@
 	</div>
 	<!-- End Sidebar Widget-->
 	
-<script href="<?php echo app_base_url()?>/assets/js/fancybox/jquery.fancybox.js"></script>
-<script src="<?php echo app_base_url()?>/assets/js/tambahan/dialog.js"></script>    
+<!--<script href="<?php echo app_base_url()?>/assets/js/fancybox/jquery.fancybox.js"></script>
+--><script src="<?php echo app_base_url()?>/assets/js/tambahan/dialog.js"></script>    
 </body>
 
 </html>

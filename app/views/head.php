@@ -45,13 +45,8 @@
         <script src="<?php echo app_base_url()?>/assets/js/jquery.truncatable.js"></script>
         <script src="<?php echo app_base_url()?>/assets/js/jquery.autocomplete.js"></script>
         <script type="text/javascript" src="<?php echo app_base_url('assets/js/tiny_mce/jquery.tinymce.js')?>"></script>
-    <!-- placeholder -->
-    <!--<script src="<?php echo app_base_url()?>/assets/js/jquery.placeholder.min.html"></script>-->
-    <!-- fancybox -->
-    <!--<script href="<?php echo app_base_url()?>/assets/js/fancybox/jquery.fancybox.js"></script>-->
-    <!-- custom function-->
-    <script src="<?php echo app_base_url()?>/assets/js/custom.js"></script>
-    <script src="<?php echo app_base_url()?>/assets/js/jquery.validate.js"></script>
+        <script src="<?php echo app_base_url()?>/assets/js/custom.js"></script>
+        <script src="<?php echo app_base_url()?>/assets/js/jquery.validate.js"></script>
     
     <script type="text/javascript">
 $().ready(function() {

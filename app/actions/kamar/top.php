@@ -48,9 +48,9 @@ $fasilitasList=  _select_arr("select * from fasilitas");
             $i=1;
             foreach ($fasilitasList as $fasilitas){
                     ?>
-                    <li class="span4 clearfix">
+                    <li class="span5 clearfix">
                         <div class="thumbImage">
-                            <a href="#"><img src="<?php echo file_exists($fasilitas['gambar'])?$fasilitas['gambar']:'upload/not-found.png'?>" alt="" style="width: 100px;height: 100px"></a>
+                            <a href="#"><img src="<?php echo file_exists($fasilitas['gambar'])?$fasilitas['gambar']:'upload/not-found.png'?>" alt="" style="width: 125px;height: 100px"></a>
                         </div>
                         <div class="thumbSetting">
                             <div class="thumbTitle">

@@ -22,7 +22,7 @@
 					</ul>
 					<p>
                                         <?php if(!is_login()){?>    
-					Welcome to ShopFine, <a href="<?php echo app_base_url('user/login')?>">Login</a> or <a href="<?php echo app_base_url('user/registrasi')?>">Create new account</a>
+					Welcome to Graha Prima Hotel, <a href="<?php echo app_base_url('user/login')?>">Login</a> or <a href="<?php echo app_base_url('user/registrasi')?>">Create new account</a>
                                         <?php }else{?>
                                         <?php 
                                         $user=  get_user_login();
@@ -38,7 +38,7 @@
 					<div class="middleContainer clearfix">
 
 					<div class="siteLogo pull-left">
-						<h1><a href="<?php echo app_base_url()?>/assets/index-2.html">ShopFine</a></h1>
+						<h1><a href="<?php echo app_base_url()?>">ShopFine</a></h1>
 					</div>
                                             <?php
                                             $user=  get_user_login();
@@ -193,7 +193,7 @@
 									<button class="btn btn-small">
 										<i class="icon-envelope-alt"></i>
 									</button>
-									<a class="invarseColor" href="<?php echo app_base_url()?>/assets/#">shopfine@shopfine.com</a>
+									<a class="invarseColor" href="<?php echo app_base_url()?>/assets/#">grahaprima@grahaprima.com</a>
 								</li>
 								<li>
 									<button class="btn btn-small">
@@ -235,7 +235,7 @@
 						<li class="electron"></li>
 						<li class="discover"></li>
 					</ul>
-					<p>© Copyrights 2012 for shopfine.com</p>
+					<p>© Copyrights 2012 for grahaprima.com</p>
 				</div>
 			</div>
 		</div>
@@ -286,6 +286,16 @@
 	
 
 <script src="<?php echo app_base_url()?>/assets/js/tambahan/dialog.js"></script>    
+<script type="text/javascript">
+var __lc = {};
+__lc.license = 3336332;
+
+(function() {
+	var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+	lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+</script>
 </body>
 
 </html>

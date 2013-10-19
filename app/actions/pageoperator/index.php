@@ -27,7 +27,8 @@ if (isset($_GET['isLunas']) && $_GET['isLunas'] != '') {
 }
 $checkInList = _select_arr("select checkin.*,
     (select count(*) from detail_checkin where id_checkin=checkin.id) as jumlah_kamar,
-    (select sum(biaya) from detail_checkin where id_checkin=checkin.id) as jumlah_tagihan,
+    ((select sum(biaya) from detail_checkin where detail_checkin.id_checkin=checkin.id)+
+    IFNULL((select sum(biaya*qty) from fasilitas_pengunjung where fasilitas_pengunjung.id_checkin=checkin.id),0))as jumlah_tagihan,
     (select sum(nominal) from pembayaran where id_checkin=checkin.id) as jumlah_bayar,
     pengunjung.nama as pengunjung
     from checkin 
@@ -108,14 +109,20 @@ $pilihanVia=array(''=>'- Semua -','online'=>'Online','offline'=>'Offline');
                 <td style="text-align: right;padding-right: 0.5em"><?php echo rupiah($checkIn['jumlah_bayar'], false) ?></td>
                 <td><?php echo $checkIn['status'] ?></td>
                 <td>
-                    <?php if($checkIn['jumlah_tagihan']>$checkIn['jumlah_bayar'] || $checkIn['status']=='unapprove'){
-                        ?><a href="<?php echo app_base_url("pageoperator/bayar?id=$checkIn[id]") ?>" class="btn btn-primary" target="ajax-modal" title="bayar">$</a><?php
-                    }
-?>
-                    <?php if($checkIn['status']=='pending'):?>
-                        <a href="<?php echo app_base_url("pageoperator/approve?id=$checkIn[id]&status=approved") ?>" class="btn btn-primary" onclick="return window.confirm('Apakah anda yakin?')" title="approve"><i class="icon icon-ok"></i> Approve</a>
-                        <a href="<?php echo app_base_url("pageoperator/approve?id=$checkIn[id]&status=unapproved") ?>" class="btn btn-primary" onclick="return window.confirm('Apakah anda yakin?')" title="hapus"><i class="icon icon-remove"></i></a>
-                    <?php endif;?>
+                    <div class="btn-group">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                Action
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                 <a href="<?php echo app_base_url("pageoperator/detail_kunjungan?id=$checkIn[id]") ?>" class="btn btn-primary" target="" title="detail"><i class="icon icon-list"></i></a>   
+                                <?php if($checkIn['status']=='pending'):?>
+                                    <a href="<?php echo app_base_url("pageoperator/approve?id=$checkIn[id]&status=approved") ?>" class="btn btn-primary" onclick="return window.confirm('Apakah anda yakin?')" title="approve"><i class="icon icon-ok"></i> Approve</a>
+                                    <a href="<?php echo app_base_url("pageoperator/approve?id=$checkIn[id]&status=unapproved") ?>" class="btn btn-primary" onclick="return window.confirm('Apakah anda yakin?')" title="hapus"><i class="icon icon-remove"></i></a>
+                                <?php endif;?>
+                            </ul>
+                        </div>
+                    
                 </td>
             </tr>
             <?php }

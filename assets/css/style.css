@@ -95,11 +95,11 @@ header {
 		margin-top:-10px;
 	}
 	.middleHeader .siteLogo a {
-		width:150px;
+		width:550px;
 		height:54px;
 		display: block;
 		font:0/0 a;
-		background:url('../img/logo.png') no-repeat left top;
+		background:url('../img/graha-prima.png') no-repeat left top;
 	}
 /* search */
 	.middleHeader .siteSearch {

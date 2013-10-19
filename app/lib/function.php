@@ -485,6 +485,7 @@ function getMenuAdmin(){
             array('title'=>'Bank','url'=>'bank'),
             array('title'=>'Kategori Artikel','url'=>'kategori_artikel'),
             array('title'=>'Artikel','url'=>'artikel'),
+            array('title'=>'Kirim Promo','url'=>'promo_fasilitas'),
             array('title'=>'Setting','url'=>'setting'),
             array('title'=>'Logout','url'=>'login/logout'),
         );

@@ -35,6 +35,9 @@ else if($pageModule=='/pageadmin' || $pageModuleOperator=='/pageoperator'){
 }
 require_once $rootPath . '/core/core.php';
 require_once $rootPath .'/app/lib/function.php';
+require_once $rootPath .'/app/lib/mail/class.phpmailer.php';
+require_once $rootPath .'/app/lib/mail/class.pop3.php';
+require_once $rootPath .'/app/lib/mail/class.smtp.php';
 require_once $rootPath .'/app/lib/db.php';
 //GO GO GO
 app_core_run();

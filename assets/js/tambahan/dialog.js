@@ -148,6 +148,9 @@ function ajaxModal(url,el){
                     success: function(msg){
                         $('#myModelDialog').html(msg);
                         $('#myModelDialog').modal('show');
+                        $('a[data-dismiss="modal"]').click(function(){
+                        $('#myModelDialog, a.close').modal('hide');
+                        })
                     },
                     error: function(){
                         $('#myModelDialog').html("request gagal dibuka");

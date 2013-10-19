@@ -15,13 +15,14 @@ if($_POST){
     }else{  
         $_SESSION['failed']="Data pembayaran gagal ditambahkan";
     }
-    redirect('pageoperator');
+    redirect('pageoperator/detail_kunjungan?id='.$_POST['bayar']['id_checkin']);
 }
 $checkIn=  _select_unique_result("select * from checkin where id='$_GET[id]'");
 $tagihan= _select_unique_result("
 select checkin.*,
     (select count(*) from detail_checkin where id_checkin=checkin.id) as jumlah_kamar,
-    (select sum(biaya) from detail_checkin where id_checkin=checkin.id) as jumlah_tagihan,
+    ((select sum(biaya) from detail_checkin where detail_checkin.id_checkin=checkin.id)+
+    IFNULL((select sum(biaya*qty) from fasilitas_pengunjung where fasilitas_pengunjung.id_checkin=checkin.id),0))as jumlah_tagihan,
     (select sum(nominal) from pembayaran where id_checkin=checkin.id) as jumlah_bayar,
     pengunjung.nama as pengunjung
     from checkin 

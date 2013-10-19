@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>ShopFine: eCommerce Website</title>
+	<title>Reservasi Hotel</title>
 	<meta name="description" content="">
 	<meta name="author" content="Ahmed Saeed">
 	<!-- Mobile Specific Metas

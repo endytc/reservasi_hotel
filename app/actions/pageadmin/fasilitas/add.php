@@ -19,7 +19,7 @@ $kategoriList=  _select_arr("select*from kategori_fasilitas");
 <form action="<?php echo app_base_url('pageadmin/fasilitas/add')?>" method="POST" id="addfasilitas" class="form-horizontal"  enctype="multipart/form-data">
     <div class="modal-header">
         <a class="close" data-dismiss="modal">&times;</a>
-        <h3>Tambah Admin </h3>
+        <h3>Tambah Fasilitas </h3>
     </div>
     <div class="modal-body">
         <div class="form">    

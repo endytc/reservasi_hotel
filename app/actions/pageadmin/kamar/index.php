@@ -6,7 +6,7 @@
         limit $page,".  getPerPage());
     $pagging= pagination("select * from kamar", getPerPage());
 ?>
-<h3>Kelas Kamar</h3>
+<h3>Kamar</h3>
 <hr>
 <a target="ajax-modal" href="<?php echo app_base_url('pageadmin/kamar/add')?>" class="btn btn-primary"><i class="icon icon-plus"></i> Tambah</a>
 <br>

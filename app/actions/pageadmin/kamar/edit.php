@@ -20,7 +20,7 @@ $kategoriList=  _select_arr("select*from kelas");
 <form action="<?php echo app_base_url('pageadmin/kamar/edit').'?id='.$_GET['id']?>" method="POST" id="addkamar" class="form-horizontal">
     <div class="modal-header">
         <a class="close" data-dismiss="modal">&times;</a>
-        <h3>Edit Fasilitas</h3>
+        <h3>Edit Kamar</h3>
     </div>
     <div class="modal-body">
         <div class="form">    
@@ -47,7 +47,7 @@ $kategoriList=  _select_arr("select*from kelas");
                 <div class="control-group">
                     <label class="control-label required">Keterangan </label>                
                     <div class="controls">
-                        <textarea class="required" name="kamar[keterangan]" cols="30" rows="3"><?php echo $kamar["keterangan"]?></textarea>
+                        <textarea class="required" name="kamar[keterangan]" cols="30" rows="3" style="width: 70%"><?php echo $kamar["keterangan"]?></textarea>
                     </div>    
                 </div>
                 

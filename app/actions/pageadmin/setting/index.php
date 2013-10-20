@@ -28,8 +28,8 @@
         <td><?php echo $data['keterangan']?></td>
         <td><?php echo $data['isi']?></td>
         <td class="button">
-            <a href="<?php echo app_base_url("pageadmin/setting/edit?id=$data[id]")?>" target="ajax-modal"><i class="icon icon-edit"></i></a>
-            <a href="<?php echo app_base_url("pageadmin/setting/delete?id=$data[id]")?>" onclick="return confirm('<?php echo "Apakah anda yakin?" ?>')"><i class="icon icon-remove-circle"></i></a>
+            <a href="<?php echo app_base_url("pageadmin/setting/edit?kd=$data[kd]")?>" target="ajax-modal"><i class="icon icon-edit"></i></a>
+            <a href="<?php echo app_base_url("pageadmin/setting/delete?kd=$data[kd]")?>" onclick="return confirm('<?php echo "Apakah anda yakin?" ?>')"><i class="icon icon-remove-circle"></i></a>
         </td>
     </tr>    
     </tbody>

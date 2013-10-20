@@ -4,7 +4,7 @@
         limit $page,".  getPerPage());
     $pagging= pagination("select * from kelas", getPerPage());
 ?>
-<h3>Kategori Fasilitas</h3>
+<h3>Kelas Kamar</h3>
 <hr>
 <a target="ajax-modal" href="<?php echo app_base_url('pageadmin/kelas/add')?>" class="btn btn-primary"><i class="icon icon-plus"></i> Tambah</a>
 <br>

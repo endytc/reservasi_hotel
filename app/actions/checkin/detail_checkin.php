@@ -4,6 +4,13 @@ $user=  get_user_login();
 $isPesan=isset($_GET['id_checkin']);
 if($isPesan){
     $where=" and detail_checkin.id_checkin='$_GET[id_checkin]'";
+    $fasilitasList=  _select_arr("select 
+        fasilitas_pengunjung.*, fasilitas.nama as fasilitas, kategori_fasilitas.nama as kategori
+        from fasilitas_pengunjung
+        join fasilitas on id_fasilitas=fasilitas.id
+        join kategori_fasilitas on id_kategori=kategori_fasilitas.id
+        and fasilitas_pengunjung.id_checkin='$_GET[id_checkin]'
+        ");
 }else
     $where=" and detail_checkin.id_checkin is null";
 
@@ -12,13 +19,6 @@ $checkInList=  _select_arr("select detail_checkin.*,kamar.nama as kamar,kelas.na
     join kelas on kelas.id=kamar.id_kelas
     where id_pengunjung='$user[id]' $where
         ");
-$fasilitasList=  _select_arr("select 
-    fasilitas_pengunjung.*, fasilitas.nama as fasilitas, kategori_fasilitas.nama as kategori
-    from fasilitas_pengunjung
-    join fasilitas on id_fasilitas=fasilitas.id
-    join kategori_fasilitas on id_kategori=kategori_fasilitas.id
-    
-    ");
 ?>
 <?php if (!$isPesan): ?>
     <div style="text-align: right;width: 100%">
@@ -78,4 +78,43 @@ $fasilitasList=  _select_arr("select
             </tr>
         </tfoot>
     </table>
+    <?php if($isPesan){
+        ?>
+    <div class="clear"></div><br>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td>Fasilitas</td>
+                    <td>Kategori</td>
+                    <td>Biaya @</td>
+                    <td>Qty</td>
+                    <td>Jumlah</td>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $jumlah = 0;
+                foreach ($fasilitasList as $fasilitas) {
+                    $jumlah+=($fasilitas['qty'] * $fasilitas['biaya'])
+                    ?>
+                    <tr>
+                        <td><?php echo $fasilitas['fasilitas'] ?></td>
+                        <td><?php echo $fasilitas['kategori'] ?></td>
+                        <td style="text-align: right;padding-right: 20px"><?php echo rupiah($fasilitas['biaya'], false) ?></td>
+                        <td><?php echo $fasilitas['qty'] ?></td>
+                        <td style="text-align: right;padding-right: 20px"><?php echo rupiah($fasilitas['qty'] * $fasilitas['biaya'], false) ?></td>
+                    </tr>
+    <?php } ?>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Jumlah</td>
+                    <td style="text-align: right;padding-right: 20px"><?php echo rupiah($jumlah, false) ?></td>
+                </tr>
+            </tfoot>
+        </table>
+            <?php
+    }
+?>
 </div>
+

@@ -1,6 +1,6 @@
 <?php
+$setting=  _select_unique_result("select * from setting where kd='minpromo'");
 if($_POST){
-    $setting=  _select_unique_result("select * from setting where kd='minpromo'");
     $memberList=  _select_arr("select *,
             (select sum(detail_checkin.biaya) from detail_checkin 
             join checkin on checkin.id=detail_checkin.id_checkin
@@ -95,11 +95,11 @@ $fasilitasList=  _select_arr("select * from fasilitas");
     <button class="btn btn-primary" type="submit" name="yt0">Tambah</button>            <a data-dismiss="modal" class="btn btn-warning btn" href="#">Close</a>
 </div>    
 </form>
+<div class="alert-info">
+    <b>Keterangan</b>: Member yang mendapatkan promo adalah member yang sudah bertransaksi lebih dari <?php echo $setting['isi']?>
+</div>
 <script type="text/javascript">
     $(document).ready(function(){
         $('#addkelas').validate();  
-         $("#gambar").rules("add", {
-            accept: "jpg|jpeg|png|ico|bmp"
-        });
     });
 </script>

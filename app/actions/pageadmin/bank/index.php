@@ -4,7 +4,7 @@
         limit $page,".  getPerPage());
     $pagging= pagination("select * from bank", getPerPage());
 ?>
-<h3>Kategori Fasilitas</h3>
+<h3>Bank</h3>
 <hr>
 <a target="ajax-modal" href="<?php echo app_base_url('pageadmin/bank/add')?>" class="btn btn-primary"><i class="icon icon-plus"></i> Tambah</a>
 <br>

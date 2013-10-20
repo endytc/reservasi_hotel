@@ -9,7 +9,7 @@ if($_POST){
     redirect('pageoperator/pengunjung/index');
 }
 ?>
-<form action="<?php echo app_base_url('pageoperator/pengunjung/add')?>" method="POST" id="addpengunjung" class="form-horizontal" enctype="multipart/form-data">
+<form action="<?php echo app_base_url('pageoperator/pengunjung/add')?>" method="POST" id="add-pengunjung" class="form-horizontal" enctype="multipart/form-data">
     <div class="modal-header">
         <a class="close" data-dismiss="modal">&times;</a>
         <h3>Tambah pengunjung</h3>
@@ -50,9 +50,6 @@ if($_POST){
 </form>
 <script type="text/javascript">
     $(document).ready(function(){
-        $('#addpengunjung').validate();  
-         $("#gambar").rules("add", {
-            accept: "jpg|jpeg|png|ico|bmp"
-        });
+        $('#add-pengunjung').validate();  
     });
 </script>

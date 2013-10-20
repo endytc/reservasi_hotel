@@ -4,11 +4,22 @@
 		<!--begain header-->
 		<header>
 
-			<div class="mainNav">
+                    <div class="mainNav" style="height: 70px">
 				<div class="container">
-					<div class="navbar">
-                                            <?php $user=  get_user_login();?>
-					      	Welcome to Hotel Management System <?php echo $user['nama']?>
+                                    <div class="navbar" style="width: 100%">
+                                        <div class="span5">
+                                            <img src="<?php echo app_base_url() ?>/assets/img/graha-prima.png">
+                                        </div>
+                                        <div class="span6" style="text-align: right">
+                                            <?php
+                                            $user = get_user_login();
+                                            if ($user['type'] == 'operator') {
+                                                ?><div style="font-size: 1.5em;">Halaman Operator, <?php echo $user['nama'] ?></div><?php
+                                            } else {
+                                                ?><div style="font-size: 1.5em;">Halaman Admin, <?php echo $user['nama'] ?></div><?php
+                                            }
+                                            ?>
+                                        </div>
 					</div>
 				</div><!--end container-->
 			</div><!--end mainNav-->	

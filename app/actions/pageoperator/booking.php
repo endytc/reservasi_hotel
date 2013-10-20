@@ -9,6 +9,11 @@
         $kelas=  _select_unique_result("select kelas.* from kamar join kelas on kelas.id=kamar.id_kelas 
             where kamar.id='$kamar'");
         $biaya=($selisih/24)*$kelas['biaya_per_hari'];
+        if($selisih%24>=6){
+            $biaya+=$kelas['biaya_per_hari'];
+        }else{
+            $biaya+=$kelas['biaya_per_hari']*0.5;
+        }
         $checkIn['id_kamar']=$kamar;
         $checkIn['biaya']=$biaya;
         $is_success=_insert('detail_checkin', $checkIn);

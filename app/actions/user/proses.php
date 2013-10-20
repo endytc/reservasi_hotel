@@ -6,6 +6,7 @@ where username='$_POST[username]' and password='".  md5($_POST['password'])."'")
 if(isset($userResult['id_pengunjung'])){
     $_SESSION['id_user']    =$userResult['id_pengunjung'];
     $_SESSION['status_user']    ='member';
+    _query("delete from detail_checkin where id_pengunjung='$userResult[id_pengunjung]' and id_checkin is null");
     $_SESSION['success']    ='Selamat datang '.$userResult['nama']; 
 }else{
     $_SESSION['failed']    ='Login gagal, user tidak ditemukan'; 

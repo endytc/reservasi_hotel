@@ -1,7 +1,7 @@
 <?php
 if($_POST){
     unset($_POST['yt0']);
-    $is_success=_update('setting', $_POST, 'id='.$_GET['id']);
+    $is_success=_update('setting', $_POST, 'kd="'.$_GET['kd'].'"');
     if($is_success){
         $_SESSION['success']="Data setting berhasil diperbarui";
     }else{
@@ -9,9 +9,9 @@ if($_POST){
     }
     redirect('pageadmin/setting/index');
 }
-$setting=  _select_unique_result("select * from setting where id=$_GET[id]");
+$setting=  _select_unique_result("select * from setting where kd='$_GET[kd]'");
 ?>
-<form action="<?php echo app_base_url('pageadmin/setting/edit?id='.$_GET['id'])?>" method="POST" class="form-horizontal" id="kategoriartikel">
+<form action="<?php echo app_base_url('pageadmin/setting/edit?kd='.$_GET['kd'])?>" method="POST" class="form-horizontal" id="kategoriartikel">
      <div class="modal-header">
         <a class="close" data-dismiss="modal">&times;</a>
         <h3>Edit setting</h3>
@@ -20,9 +20,15 @@ $setting=  _select_unique_result("select * from setting where id=$_GET[id]");
         <div class="form">    
             <fieldset>
                 <div class="control-group">
-                    <label class="control-label required">Nama </label>                
+                    <label class="control-label required">Keterangan </label>                
                     <div class="controls">
-                        <input type="text" class="required" name="nama" value="<?php echo $setting['nama']?>">
+                        <input type="text" class="required" name="keterangan" value="<?php echo $setting['keterangan']?>">
+                    </div>    
+                </div>
+                <div class="control-group">
+                    <label class="control-label required">Isi </label>                
+                    <div class="controls">
+                        <input type="text" class="required" name="isi" value="<?php echo $setting['isi']?>">
                     </div>    
                 </div>
             </fieldset>

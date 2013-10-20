@@ -50,6 +50,15 @@ function date2mysql($tgl) {
     $new = "$tgl[2]-$tgl[1]-$tgl[0]";
     return $new;
 }
+/**
+ * 
+ * @param type $time yyyy-mm-dd H:m:s
+ * @return type dd-mm-yyyy H:m:s
+ */
+function timeFormatFromMysql($time){
+    $time=  explode(' ', $time);
+    return datefmysql($time[0]).' '.$time[1];
+}
 
 function datefmysql($tgl) {
 	if($tgl=='' || $tgl==null){

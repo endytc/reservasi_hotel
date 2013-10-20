@@ -38,7 +38,7 @@ $checkInList = _select_arr("select checkin.*,
     order by checkin.waktu desc
     ");
 $pilihanStatus = array('' => '- Semua -','pending' => 'Pending',
-    'approved' => 'Approve', 'upproved' => 'Deleted',
+    'approved' => 'Approve', 'unapproved' => 'Unapproved    ',
 );
 $pilihanLunas = array('' => '- Semua -', 'lunas' => 'Lunas', 'belum_lunas' => 'Belum Lunas','belum_bayar'=>'Belum Dibayar'
 );
@@ -103,7 +103,7 @@ $pilihanVia=array(''=>'- Semua -','online'=>'Online','offline'=>'Offline');
             <tr class="<?php echo ($checkIn['status'] == 'pending') ? 'warning' : (($checkIn['status'] == 'approved') ? 'success' : 'error') ?>">
                 <td><?php echo $no++ ?></td>
                 <td><?php echo $checkIn['pengunjung'] ?></td>
-                <td><?php echo $checkIn['waktu'] ?></td>
+                <td><?php echo timeFormatFromMysql($checkIn['waktu']) ?></td>
                 <td><?php echo $checkIn['jumlah_kamar'] ?></td>
                 <td style="text-align: right;padding-right: 0.5em"><?php echo rupiah($checkIn['jumlah_tagihan'], false) ?></td>
                 <td style="text-align: right;padding-right: 0.5em"><?php echo rupiah($checkIn['jumlah_bayar'], false) ?></td>

@@ -10,6 +10,8 @@ if($checkIn['jumlah_bayar']>=$checkIn['jumlah_tagihan']){
 }
 $success=_update('checkin', $dataUpdate, "id='$_GET[id]'");
 if($success){
+    if($poin==null || $poin=='')
+        $poin=0;
     _update('pengunjung', array('jumlah_poin'=>$poin), "id=$checkIn[id_pengunjung]");
     _query("update pengunjung set jumlah_poin=jumlah_poin+$poin where id='$checkIn[id_pengunjung]'");
     $_SESSION['success']='Data berhasil diperbarui';

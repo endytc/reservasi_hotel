@@ -6,7 +6,7 @@
         limit $page,".  getPerPage());
     $pagging= pagination("select * from fasilitas", getPerPage());
 ?>
-<h3>Admin</h3>
+<h3>Fasilitas</h3>
 <hr>
 <a target="ajax-modal" href="<?php echo app_base_url('pageadmin/fasilitas/add')?>" class="btn btn-primary"><i class="icon icon-plus"></i> Tambah</a>
 <br>

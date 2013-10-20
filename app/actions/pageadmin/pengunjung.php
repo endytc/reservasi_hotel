@@ -6,9 +6,6 @@
 ?>
 <h3>Pengunjung</h3>
 <hr>
-<a target="ajax-modal" href="<?php echo app_base_url('pageoperator/pengunjung/add')?>" class="btn btn-primary"><i class="icon icon-plus"></i> Tambah</a>
-<br>
-<br>
 <table class="table table-bordered">
     <thead>
     <tr>
@@ -17,7 +14,6 @@
         <th>No Hp</th>
         <th>Tanda Pengenal</th>
         <th>Alamat</th>
-        <th>Aksi</th>
     </tr>
     </thead>
     <tbody>
@@ -31,10 +27,6 @@
         <td><?php echo $data['no_hp'];?></td>
         <td><?php echo $data['tanda_pengenal']."<br>No. $data[no_tanda_pengenal]";?></td>
         <td><?php echo $data['alamat'];?></td>
-        <td class="button">
-            <a target="ajax-modal" href="<?php echo app_base_url("pageoperator/pengunjung/edit?id=$data[id]")?>" class="edit"><i class="icon icon-edit"></i></a>
-            <a href="<?php echo app_base_url("pageoperator/pengunjung/delete?id=$data[id]")?>" onclick="return confirm('<?php echo "Apakah anda yakin akan menghapus pengunjung $data[nama]?" ?>')"class="hapus"><i class="icon icon-remove"></i></a>
-        </td>
     </tr>    
     </tbody>
         <?php

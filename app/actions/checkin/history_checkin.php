@@ -29,7 +29,7 @@ $checkInList=  _select_arr("select *,
             ?>
         <tr class="<?php echo ($checkIn['status']=='pending')?'warning':(($checkIn['status']=='approved')?'success':'error')?>">
             <td><?php echo $no++?></td>
-            <td><?php echo $checkIn['waktu']?></td>
+            <td><?php echo timeFormatFromMysql($checkIn['waktu'])?></td>
             <td><?php echo $checkIn['jumlah_kamar']?></td>
             <td style="text-align: right;padding-right: 0.5em"><?php echo rupiah($checkIn['jumlah_tagihan'],false)?></td>
             <td style="text-align: right;padding-right: 0.5em"><?php echo rupiah($checkIn['jumlah_poin']*$checkIn['nilai_poin'],false)?></td>

@@ -1,7 +1,6 @@
 <?php
 $kelasQry=  _select_arr("select *,(select count(*) from kamar where kamar.id_kelas=kelas.id) as jumlah_kamar from kelas");
 ?>
-<!--<div id="featuredItems">-->
     <div class="row">
         <ul class="hProductItems clearfix">
             <?php foreach($kelasQry as $kelas):?>
@@ -45,4 +44,3 @@ $kelasQry=  _select_arr("select *,(select count(*) from kamar where kamar.id_kel
             <?php endforeach;?>
         </ul>
     </div><!--end row-->
-<!--</div>-->

@@ -1,4 +1,10 @@
 <?php
+if(!isset($_GET['status'])){
+    $_GET['status']='approved';
+}
+if(!isset($_GET['isLunas'])){
+    $_GET['isLunas']='lunas';
+}
 $where = '1=1';
 $having = '1=1';
 //$statusChecked='';
@@ -45,9 +51,11 @@ $pilihanLunas = array('' => '- Semua -', 'lunas' => 'Lunas', 'belum_lunas' => 'B
 $pilihanVia=array(''=>'- Semua -','online'=>'Online','offline'=>'Offline');
 ?>
 <div class="span2" style="text-align: left">
+    <?php if($_SESSION['status_user']=='operator'){?>
     <a href="<?php echo app_base_url('pageoperator/kunjungan')?>" class="btn btn-primary">
         <i class="icon icon-plus-sign"></i> Tambah
     </a>
+    <?php }?>
 </div>    
 <div class="9" style="text-align: right">
     <form>
@@ -92,7 +100,9 @@ $pilihanVia=array(''=>'- Semua -','online'=>'Online','offline'=>'Offline');
             <th width="130px">Jumlah Tagihan</th>
             <th width="130px">Sudah Dibayar</th>
             <th>Status</th>
+            <?php if($_SESSION['status_user']=='operator'){?>
             <th>Aksi</th>
+            <?php }?>
         </tr>
     </thead>
     <tbody>
@@ -108,6 +118,7 @@ $pilihanVia=array(''=>'- Semua -','online'=>'Online','offline'=>'Offline');
                 <td style="text-align: right;padding-right: 0.5em"><?php echo rupiah($checkIn['jumlah_tagihan'], false) ?></td>
                 <td style="text-align: right;padding-right: 0.5em"><?php echo rupiah($checkIn['jumlah_bayar'], false) ?></td>
                 <td><?php echo $checkIn['status'] ?></td>
+                <?php if($_SESSION['status_user']=='operator'){?>
                 <td>
                     <div class="btn-group">
                             <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -124,6 +135,7 @@ $pilihanVia=array(''=>'- Semua -','online'=>'Online','offline'=>'Offline');
                         </div>
                     
                 </td>
+                <?php }?>
             </tr>
             <?php }
         ?>

@@ -22,7 +22,7 @@
 					</ul>
 					<p>
                                         <?php if(!is_login()){?>    
-					Welcome to Graha Prima Hotel, <a href="<?php echo app_base_url('user/login')?>">Login</a> or <a href="<?php echo app_base_url('user/registrasi')?>">Create new account</a>
+					<!--Welcome to Graha Prima Hotel, <a href="<?php echo app_base_url('user/login')?>">Login</a> or <a href="<?php echo app_base_url('user/registrasi')?>">Create new account</a>-->
                                         <?php }else{?>
                                         <?php 
                                         $user=  get_user_login();
@@ -66,6 +66,9 @@
                                             <?php }?>
 					<div class="pull-right">
 						<?php include 'app/actions/items_on_list.php';?>
+                                            <?php if($user==null):?>
+                                            <a href="<?php echo app_base_url('user/login')?>" class="btn "><i class="icon icon-user"></i> Login</a>
+                                            <?php endif;?>
 					</div><!--end pull-right-->
 
 					</div><!--end middleCoontainer-->
@@ -199,6 +202,16 @@
 <script type="text/javascript">
 var __lc = {};
 __lc.license = 3336332;
+
+(function() {
+	var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+	lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+</script>
+<script type="text/javascript">
+var __lc = {};
+__lc.license = 3609181;
 
 (function() {
 	var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;

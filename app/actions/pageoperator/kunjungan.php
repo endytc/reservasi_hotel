@@ -10,7 +10,7 @@ if(isset($_GET['act']) && $_GET['act']=='save_kunjungan'){
     ));
     $idCheckin=_select_unique_result("select max(id) as id from checkin where id_pengunjung='".$_POST['checkin']['id_pengunjung']."'");
     _update('detail_checkin', array('id_checkin'=>$idCheckin['id']), "id_checkin is NULL");
-    redirect('pageoperator/pembayaran?id='.$idCheckin['id']);
+    redirect('pageoperator/detail_kunjungan?id='.$idCheckin['id']);
     
 }
 $checkInDetail=  _select_arr("select detail_checkin.*,kelas.nama as kelas,kamar.nama as kamar from detail_checkin 

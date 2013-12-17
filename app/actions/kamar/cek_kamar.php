@@ -70,14 +70,14 @@ if (isset($kamarList)) {
                             <label class="control-label required">Check In</label>                
                             <div class="controls">
                                 <input type="text" class="required tanggal_pesan span2 tanggal" name="tanggal_check_in" placeholder="dd/mm/yyyy" value="<?php echo array_value($_GET, 'tanggal_check_in') ?>">
-                                <input type="text" class="required span2" name="jam_check_in" placeholder="00:00:00"value="<?php echo array_value($_GET, 'jam_check_in') ?>">
+                                <input type="text" class="required span2" name="jam_check_in" placeholder="24:00"value="<?php echo array_value($_GET, 'jam_check_in') ?>">
                             </div>    
                         </div>
                         <div class="control-group">
                             <label class="control-label required">Check Out</label>                
                             <div class="controls">
                                 <input type="text" class="required span2 tanggal_pesan tanggal" name="tanggal_check_out" placeholder="dd/mm/yyyy" value="<?php echo array_value($_GET, 'tanggal_check_out') ?>">
-                                <input type="text" class="required span2" name="jam_check_out" placeholder="00:00:00" value="<?php echo array_value($_GET, 'jam_check_out') ?>">
+                                <input type="text" class="required span2" name="jam_check_out" placeholder="24:00" value="<?php echo array_value($_GET, 'jam_check_out') ?>">
                             </div>    
                         </div>
                     </fieldset>

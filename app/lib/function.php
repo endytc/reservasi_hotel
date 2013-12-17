@@ -484,6 +484,8 @@ function get_artikel_menu(){
 function getMenuAdmin(){
     if(is_admin())
         return array(
+            array('title'=>'History Kunjungan','url'=>'history_kunjungan'),
+            array('title'=>'History Perpengunjung','url'=>'history_kunjungan_perpengunjung'),
             array('title'=>'Admin','url'=>'admin'),
             array('title'=>'Operator','url'=>'operator'),
             array('title'=>'Kategori Fasilitas','url'=>'kategori_fasilitas'),
@@ -570,5 +572,20 @@ function selisihJam($tglAwal, $tglAkhir,$jamAwal='00:00',$jamAkhir='00:00')
     $selisih = $jd2 - $jd1;
     // menghitung selisih hari yang bukan tanggal merah dan hari minggu
     return $selisih/3600;
+}
+function generate_sort_parameter($sort,$sortBy=null,$tab = NULL){
+    $link=$_GET;
+    $link['sort']=$sort;
+
+    if($sortBy=='asc' && $_GET['sort']==$sort)
+        $link['sortBy']='desc';
+    else
+        $link['sortBy']='asc';
+    if($tab != NULL){
+        $tabs['tab']=$tab;
+    }else $tabs['tab']="";
+    
+    $link=generate_get_parameter($link,$tabs);
+    return $link;
 }
 ?>

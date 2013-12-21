@@ -1,17 +1,21 @@
 <?php
 if (isset($_GET['tanggal_check_in'])) {
-    $kamarList = _select_arr("select * from kamar where kamar.id not in
+    $qry="select * from kamar where kamar.id not in
             (
                 select id_kamar from 
                     detail_checkin c 
                 join checkin on checkin.id=c.id_checkin    
                 where 
-                    ((c.masuk>'$_GET[tanggal_check_in] $_GET[jam_check_in]' AND c.masuk<'$_GET[tanggal_check_out] $_GET[jam_check_out]') OR
-                    (c.keluar>'$_GET[tanggal_check_in] $_GET[jam_check_in]' AND c.keluar<'$_GET[tanggal_check_out] $_GET[jam_check_out]')) AND
-                    checkin.status<>'unapproved'
+                    ((c.masuk<'$_GET[tanggal_check_in] $_GET[jam_check_in]' AND c.keluar>'$_GET[tanggal_check_in] $_GET[jam_check_in]') OR
+                    (c.masuk<'$_GET[tanggal_check_out] $_GET[jam_check_out]' AND c.keluar>'$_GET[tanggal_check_out] $_GET[jam_check_out]') 
+                     OR (c.masuk>'$_GET[tanggal_check_in] $_GET[jam_check_in]' AND c.keluar<'$_GET[tanggal_check_out] $_GET[jam_check_out]')   
+                     OR (c.masuk='$_GET[tanggal_check_in] $_GET[jam_check_in]' AND c.keluar='$_GET[tanggal_check_out] $_GET[jam_check_out]'))    
+                        AND checkin.status<>'unapproved'
             )
             and id_kelas=$_GET[id_kelas]
-    ");
+    ";
+    echo $qry;
+    $kamarList = _select_arr($qry);
 }$kelas = _select_unique_result("select * from kelas where id=$_GET[id_kelas]");
 ?>
 <div class="modal-header">

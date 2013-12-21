@@ -1,12 +1,13 @@
 <?php
 $isIdKelasParam = false;
+$id_kelas_selected=(isset($_GET['id_kelas']))?$_GET['id_kelas']:null;
 if (isset($_GET['tanggal_check_in'])) {
     $where = '1=1';
     if (isset($_GET['id_kelas']) && $_GET['id_kelas'] != '') {
         $isIdKelasParam = true;
         $where.=" and id_kelas=$_GET[id_kelas]";
     }
-    $kamarList = _select_arr("select kamar.*,kelas.nama as kelas from kamar 
+    $qry="select kamar.*,kelas.nama as kelas from kamar 
         join kelas on kelas.id=kamar.id_kelas
         where kamar.id not in
             (
@@ -14,14 +15,18 @@ if (isset($_GET['tanggal_check_in'])) {
                     detail_checkin c 
                 join checkin on checkin.id=c.id_checkin    
                 where 
-                    ((c.masuk>'$_GET[tanggal_check_in] $_GET[jam_check_in]' AND c.masuk<'$_GET[tanggal_check_out] $_GET[jam_check_out]') OR
-                    (c.keluar>'$_GET[tanggal_check_in] $_GET[jam_check_in]' AND c.keluar<'$_GET[tanggal_check_out] $_GET[jam_check_out]')) AND
-                    checkin.status<>'unapproved'
+                    ((c.masuk<'$_GET[tanggal_check_in] $_GET[jam_check_in]' AND c.keluar>'$_GET[tanggal_check_in] $_GET[jam_check_in]') OR
+                    (c.masuk<'$_GET[tanggal_check_out] $_GET[jam_check_out]' AND c.keluar>'$_GET[tanggal_check_out] $_GET[jam_check_out]') 
+                     OR (c.masuk>'$_GET[tanggal_check_in] $_GET[jam_check_in]' AND c.keluar<'$_GET[tanggal_check_out] $_GET[jam_check_out]')   
+                     OR (c.masuk='$_GET[tanggal_check_in] $_GET[jam_check_in]' AND c.keluar='$_GET[tanggal_check_out] $_GET[jam_check_out]'))    
+                        AND checkin.status<>'unapproved'
             )
             and $where
                 order by id_kelas
-    ");
+    ";
+    $kamarList = _select_arr($qry);
 }
+//echo $qry;
 $kelasList = _select_arr("select * from kelas");
 ?>
 <div class="modal-header">
@@ -80,7 +85,7 @@ if (isset($kamarList)) {
                         <select name="id_kelas">
                             <option value="">Semua Kelas</option>
                             <?php foreach ($kelasList as $kelas) {
-                                ?><option value="<?php echo $kelas['id'] ?>"><? echo $kelas['nama'] . ' (' . rupiah($kelas['biaya_per_hari']) . '/24 jam)' ?></option><?php
+                                ?><option value="<?php echo $kelas['id'] ?>" <?php echo ($kelas['id']==$id_kelas_selected)?'selected':''?>><? echo $kelas['nama'] . ' (' . rupiah($kelas['biaya_per_hari']) . '/24 jam)' ?></option><?php
                             }
                             ?>
                         </select>

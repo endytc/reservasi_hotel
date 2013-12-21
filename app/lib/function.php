@@ -338,6 +338,7 @@ function _update($table_name,$data,$where){
        
     }
     $query=$insertString.' '.$column.' where '.$where;
+//    echo $query;exit;
     $qry=mysql_query($query) or die (mysql_error().'<br/>'.$query);
     return $qry;
 }

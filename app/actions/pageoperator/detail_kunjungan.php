@@ -23,6 +23,7 @@ from checkin
     join pengunjung on id_pengunjung=pengunjung.id
     where checkin.id='$_GET[id]'
 ");
+
 $detailCheckinList=  _select_arr("select detail_checkin.*,kamar.nama as kamar from detail_checkin 
     join kamar on kamar.id=id_kamar
     where id_checkin='$_GET[id]'");
@@ -75,7 +76,10 @@ $fasilitasList=  _select_arr("select
                 <tr>
                     <td><?php echo $bayar['kamar']?></td>
                     <td><?php echo $bayar['masuk'].' s.d '.$bayar['keluar']?></td>
-                    <td style="text-align: right;padding-right: 10px"><?php echo rupiah($bayar['biaya'],false)?></td>
+                    <td style="text-align: right;padding-right: 10px">
+                        <?php echo rupiah($bayar['biaya'],false)?>
+                        <a href="<?php echo app_base_url('pageoperator/tambah_jam')."?id_check_in_list=".$bayar['id']."&id=$_GET[id]"?>" target="ajax-modal" title="Tambah Jam"><i class="icon icon-plus-sign"></i></a>
+                    </td>
                 </tr>
                 <?php }?>
             </tbody>

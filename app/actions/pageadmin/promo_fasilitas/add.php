@@ -1,6 +1,14 @@
 <?php
 $setting=  _select_unique_result("select * from setting where kd='minpromo'");
+//show_array($_POST);exit;
 if($_POST){
+    $having=1;
+    if($_POST['promo']['transaksi_min']>0 && $_POST['promo']['transaksi_min']!=""){
+        $having.=" and totalbiaya>='".$_POST['promo']['transaksi_min']."'";
+    }
+    if($_POST['promo']['transaksi_max']>0 && $_POST['promo']['transaksi_max']!=""){
+        $having.=" and totalbiaya<='".$_POST['promo']['transaksi_max']."'";
+    }
     $memberList=  _select_arr("select *,
             (select sum(detail_checkin.biaya) from detail_checkin 
             join checkin on checkin.id=detail_checkin.id_checkin
@@ -9,7 +17,7 @@ if($_POST){
              from pengunjung
             join member on member.id_pengunjung=pengunjung.id
             where member.email<>'' and member.email is not null
-            having totalbiaya>'$setting[isi]'");
+            having $having");
     
     $is_success         = _insert('promo', $_POST['promo']);
     $lastId=  _select_unique_result("select max(id) as id from promo");
@@ -50,7 +58,7 @@ if($_POST){
         if(!$mail->Send()) {
             $_SESSION['failed']="Promo gagal dikirim";
           } else {
-            $_SESSION['failed']="Promo gagal dikirim";
+            $_SESSION['success']="Promo berhasil dikirim";
           }
     }
     redirect('pageadmin/promo_fasilitas');
@@ -73,16 +81,11 @@ $fasilitasList=  _select_arr("select * from fasilitas");
                     </div>    
                 </div>
                 <div class="control-group">
-                    <label class="control-label required">Fasilitas</label>                
+                    <label class="control-label required">Range Transaksi</label>                
                     <div class="controls">
-                        <select name="promo[id_fasilitas]">
-                            <option value="">-</option>
-                            <?php
-                            foreach($fasilitasList as $fasilitas){
-                                echo "<option value='$fasilitas[id]'>$fasilitas[nama]</option>";
-                            }
-                            ?>
-                        </select>
+                        <input type="text" name="promo[transaksi_min]" class="span2 number" style="text-align: right"/> 
+                        <div style="display:inline">s.d</div> 
+                        <input type="text" name="promo[transaksi_max]" class="span2 number" style="text-align: right"/>
                     </div>    
                 </div>
                 <div class="control-group">
@@ -95,9 +98,7 @@ $fasilitasList=  _select_arr("select * from fasilitas");
     <button class="btn btn-primary" type="submit" name="yt0">Tambah</button>            <a data-dismiss="modal" class="btn btn-warning btn" href="#">Close</a>
 </div>    
 </form>
-<div class="alert-info">
-    <b>Keterangan</b>: Member yang mendapatkan promo adalah member yang sudah bertransaksi lebih dari <?php echo $setting['isi']?>
-</div>
+
 <script type="text/javascript">
     $(document).ready(function(){
         $('#addkelas').validate();  

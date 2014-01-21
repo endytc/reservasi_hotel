@@ -15,6 +15,7 @@
     <tr>
         <th>No</th>
         <th>Judul</th>
+        <th>Nominal</th>
         <th>Isi</th>
         <th>Jumlah Penerima</th>
     </tr>
@@ -27,8 +28,26 @@
     <tr>
         <td><?php echo $i++;?></td>
         <td><?php echo $data['judul'];?></td>
+        <td><?php 
+        if($data['transaksi_min']>0 && $data['transaksi_max']>0){
+            echo rupiah($data['transaksi_min']).' s.d '.rupiah($data['transaksi_max']);
+        }elseif($data['transaksi_min']==0 && $data['transaksi_max']==0){
+            echo "Semua menerima";
+        }
+        elseif($data['transaksi_max']==0){
+            echo "Min ".rupiah($data['transaksi_min']);
+        }elseif($data['transaksi_min']==0){
+            echo "Max ".rupiah($data['transaksi_max']);
+        }        
+
+            ?>
+        </td>
         <td><?php echo $data['isi'];?></td>
-        <td><?php echo $data['jumlah_penerima'];?></td>
+        <td>
+            <a href="<?php echo app_base_url('pageadmin/promo_fasilitas/view_penerima_promo')."?id=".$data['id']?>" target="ajax-modal">
+                <?php echo $data['jumlah_penerima'];?>
+            </a>
+        </td>
         
     </tr>    
     </tbody>

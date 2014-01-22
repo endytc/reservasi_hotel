@@ -1,6 +1,3 @@
-
-
-
 <?php
 $penerimaList=_select_arr("select * from promo_pengunjung 
     join pengunjung on pengunjung.id=promo_pengunjung.id_pengunjung

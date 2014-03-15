@@ -487,6 +487,8 @@ function getMenuAdmin(){
         return array(
             array('title'=>'History Kunjungan','url'=>'history_kunjungan'),
             array('title'=>'History Perpengunjung','url'=>'history_kunjungan_perpengunjung'),
+            array('title'=>'Rating Kamar','url'=>'rating_kamar'),
+            array('title'=>'Laporan Reservasi Per Kamar','url'=>'laporan_kamar'),
             array('title'=>'Admin','url'=>'admin'),
             array('title'=>'Operator','url'=>'operator'),
             array('title'=>'Kategori Fasilitas','url'=>'kategori_fasilitas'),
@@ -505,6 +507,8 @@ function getMenuAdmin(){
         return array(
             array('title'=>'Reservasi','url'=>''),
             array('title'=>'Pengunjung','url'=>'pengunjung'),
+            array('title'=>'Rating Kamar','url'=>'rating_kamar'),
+            array('title'=>'Laporan Reservasi Per Kamar','url'=>'laporan_kamar'),
 //            array('title'=>'Pembayaran','url'=>'pembayaran'),
             array('title'=>'Logout','url'=>'../pageadmin/login/logout'),
         );

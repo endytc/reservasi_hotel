@@ -14,7 +14,6 @@ if (isset($_GET['tanggal_check_in'])) {
             )
             and id_kelas=$_GET[id_kelas]
     ";
-    echo $qry;
     $kamarList = _select_arr($qry);
 }$kelas = _select_unique_result("select * from kelas where id=$_GET[id_kelas]");
 ?>
@@ -112,6 +111,22 @@ if (isset($kamarList)) {
     $(document).ready(function() {
         $('#addadmin').validate();
         $('#addadmin').formatTanggal();
-        $('.tanggal_pesan').datepicker();
+        $('input[name=tanggal_check_in]').datepicker({
+            minDate:0,
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 1,
+            onClose: function( selectedDate ) {
+                $( "input[name=tanggal_check_out]" ).datepicker( "option", "minDate", selectedDate );
+            }
+        });
+        $( "input[name=tanggal_check_out]" ).datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 1,
+            onClose: function( selectedDate ) {
+                $( "input[name=tanggal_check_in]" ).datepicker( "option", "maxDate", selectedDate );
+            }
+        });
     });
 </script>

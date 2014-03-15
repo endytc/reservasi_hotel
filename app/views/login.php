@@ -50,7 +50,7 @@
             </div><!--/row-->
 
             <div class="row-fluid" >
-                <div class="well span5 center login-box">
+                <div class="well span4 center login-box">
                     <div class="alert alert-info">
                         Please login with your Username and Password.
                     </div>

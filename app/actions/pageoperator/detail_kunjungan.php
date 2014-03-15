@@ -63,6 +63,10 @@ $fasilitasList=  _select_arr("select
         </table>
     </div>
     <div class="span7">
+        <?php if($_SESSION['status_user']=='operator'){?>
+        <a href="<?php echo app_base_url("pageoperator/ambil_kunci?id=$_GET[id]&status=approved") ?>" class="btn btn-primary" onclick="return window.confirm('Apakah anda yakin?')" title="Ambil semua kunci"><i class="icon icon-key"></i> Ambil</a>
+        <a href="<?php echo app_base_url("pageoperator/kembali_kunci?id=$_GET[id]&status=approved") ?>" class="btn btn-primary" onclick="return window.confirm('Apakah anda yakin?')" title="Mengembalikan semua kunci"><i class="icon icon-key"></i> Kembali</a>
+        <?php }?>
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -74,8 +78,20 @@ $fasilitasList=  _select_arr("select
             <tbody>
                 <?php foreach($detailCheckinList as $bayar){?>
                 <tr>
-                    <td><?php echo $bayar['kamar']?></td>
-                    <td><?php echo $bayar['masuk'].' s.d '.$bayar['keluar']?></td>
+                    <td style="vertical-align: top"><?php echo $bayar['kamar']?></td>
+                    <td>
+                        <?php echo $bayar['masuk'].' s.d '.$bayar['keluar']?><br>
+                        <?php echo "Pengambilan Kunci: ".
+                            (($bayar['waktu_mengambil_kunci']==null)?
+                                "<a href='".app_base_url("pageoperator/ambil_kunci?id=$_GET[id]&id_detail=".$bayar['id'])."'>Sekarang</a>":
+                                $bayar['waktu_mengambil_kunci'])
+                        ?><br>
+                        <?php echo "Pengembalian Kunci: ".
+                            (($bayar['waktu_mengembalikan_kunci']==null)?
+                                "<a href='".app_base_url("pageoperator/kembali_kunci?id=$_GET[id]&id_detail=".$bayar['id'])."'>Sekarang</a>":
+                                $bayar['waktu_mengembalikan_kunci'])
+                        ?>
+                    </td>
                     <td style="text-align: right;padding-right: 10px">
                         <?php echo rupiah($bayar['biaya'],false)?>
                         <a href="<?php echo app_base_url('pageoperator/tambah_jam')."?id_check_in_list=".$bayar['id']."&id=$_GET[id]"?>" target="ajax-modal" title="Tambah Jam"><i class="icon icon-plus-sign"></i></a>
@@ -87,7 +103,9 @@ $fasilitasList=  _select_arr("select
     </div>
 </div>
 <div class="clear"></div><br>
+<?php if($_SESSION['status_user']=='operator'){?>
 <a href="<?php echo app_base_url("pageoperator/bayar?id=$_GET[id]") ?>" class="btn btn-primary" target="ajax-modal" title="bayar">Bayar</a>
+<?php }?>
 <div class="clear"></div><br>
 <table class="table table-bordered">
     <thead>
@@ -126,7 +144,9 @@ $fasilitasList=  _select_arr("select
     </tfoot>
 </table>
 <div class="clear"></div><br>
+<?php if($_SESSION['status_user']=='operator'){?>
 <a href="<?php echo app_base_url("pageoperator/add_fasilitas?id=$_GET[id]") ?>" class="btn btn-primary" target="ajax-modal" title=""><i class="icon icon-plus-sign"></i> Tambah Fasilitas</a>
+<?php }?>
 <div class="clear"></div><br>
 <table class="table table-bordered">
     <thead>

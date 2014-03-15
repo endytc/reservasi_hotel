@@ -3,7 +3,7 @@ if(!isset($_GET['status'])){
     $_GET['status']='approved';
 }
 if(!isset($_GET['isLunas'])){
-    $_GET['isLunas']='lunas';
+    $_GET['isLunas']='';
 }
 $where = '1=1';
 $having = '1=1';
@@ -36,10 +36,12 @@ $checkInList = _select_arr("select checkin.*,
     ((select sum(biaya) from detail_checkin where detail_checkin.id_checkin=checkin.id)+
     IFNULL((select sum(biaya*qty) from fasilitas_pengunjung where fasilitas_pengunjung.id_checkin=checkin.id),0))as jumlah_tagihan,
     (select sum(nominal) from pembayaran where id_checkin=checkin.id) as jumlah_bayar,
-    pengunjung.nama as pengunjung
-    from checkin 
+    pengunjung.nama as pengunjung,
+    (select count(*) from detail_checkin where id_checkin=checkin.id and waktu_mengambil_kunci is not null) as sudah_ambil,
+    (select count(*) from detail_checkin where id_checkin=checkin.id and waktu_mengembalikan_kunci is not null) as sudah_kembali
+    from checkin
     join pengunjung on pengunjung.id=checkin.id_pengunjung
-    where $where 
+    where $where
     having $having
     order by checkin.waktu desc
     ");
@@ -93,16 +95,19 @@ $pilihanVia=array(''=>'- Semua -','online'=>'Online','offline'=>'Offline');
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>No</th>
-            <th>Pengunjung</th>
-            <th>Waktu Input</th>
-            <th>Jumlah Kamar</th>
-            <th width="130px">Jumlah Tagihan</th>
-            <th width="130px">Sudah Dibayar</th>
-            <th>Status</th>
-            <?php if($_SESSION['status_user']=='operator'){?>
-            <th>Aksi</th>
-            <?php }?>
+            <th rowspan="2">No</th>
+            <th rowspan="2">Pengunjung</th>
+            <th  rowspan="2">Waktu Input</th>
+            <th rowspan="2">Jumlah Kamar</th>
+            <th colspan="2">Status Kunci</th>
+            <th rowspan="2" width="130px">Jumlah Tagihan</th>
+            <th rowspan="2" width="130px">Sudah Dibayar</th>
+            <th rowspan="2">Status</th>
+            <th rowspan="2">Aksi</th>
+        </tr>
+        <tr>
+            <th>Diambil</th>
+            <th>Dikembalikan</th>
         </tr>
     </thead>
     <tbody>
@@ -115,27 +120,34 @@ $pilihanVia=array(''=>'- Semua -','online'=>'Online','offline'=>'Offline');
                 <td><?php echo $checkIn['pengunjung'] ?></td>
                 <td><?php echo timeFormatFromMysql($checkIn['waktu']) ?></td>
                 <td><?php echo $checkIn['jumlah_kamar'] ?></td>
+                <td><?php echo $checkIn['sudah_ambil'] ?></td>
+                <td><?php echo $checkIn['sudah_kembali'] ?></td>
                 <td style="text-align: right;padding-right: 0.5em"><?php echo rupiah($checkIn['jumlah_tagihan'], false) ?></td>
                 <td style="text-align: right;padding-right: 0.5em"><?php echo rupiah($checkIn['jumlah_bayar'], false) ?></td>
                 <td><?php echo $checkIn['status'] ?></td>
-                <?php if($_SESSION['status_user']=='operator'){?>
                 <td>
+                    <?php if($_SESSION['status_user']=='operator'){?>
                     <div class="btn-group">
                             <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                                 Action
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                 <a href="<?php echo app_base_url("pageoperator/detail_kunjungan?id=$checkIn[id]") ?>" class="btn btn-primary" target="" title="detail"><i class="icon icon-list"></i></a>   
+                                <a href="<?php echo app_base_url("pageoperator/detail_kunjungan?id=$checkIn[id]") ?>" class="btn btn-primary" target="" title="detail"><i class="icon icon-list"></i></a>
                                 <?php if($checkIn['status']=='pending'):?>
                                     <a href="<?php echo app_base_url("pageoperator/approve?id=$checkIn[id]&status=approved") ?>" class="btn btn-primary" onclick="return window.confirm('Apakah anda yakin?')" title="approve"><i class="icon icon-ok"></i> Approve</a>
                                     <a href="<?php echo app_base_url("pageoperator/approve?id=$checkIn[id]&status=unapproved") ?>" class="btn btn-primary" onclick="return window.confirm('Apakah anda yakin?')" title="hapus"><i class="icon icon-remove"></i></a>
-                                <?php endif;?>
+                                <?php else:
+                                    ?><a href="<?php echo app_base_url("pageoperator/ambil_kunci?id=$checkIn[id]&status=approved") ?>" class="btn btn-primary" onclick="return window.confirm('Apakah anda yakin?')" title="Ambil semua kunci"><i class="icon icon-key"></i> Ambil</a> <?php
+                                    ?><a href="<?php echo app_base_url("pageoperator/kembali_kunci?id=$checkIn[id]&status=approved") ?>" class="btn btn-primary" onclick="return window.confirm('Apakah anda yakin?')" title="Mengembalikan semua kunci"><i class="icon icon-key"></i> Kembali</a><?php
+                                endif;?>
                             </ul>
                         </div>
-                    
+
+                    <?php }else{
+                        ?><a href="<?php echo app_base_url("pageoperator/detail_kunjungan?id=$checkIn[id]") ?>" class="btn btn-primary" target="" title="detail"><i class="icon icon-list"></i></a><?php
+                    }?>
                 </td>
-                <?php }?>
             </tr>
             <?php }
         ?>

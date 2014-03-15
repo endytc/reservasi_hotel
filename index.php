@@ -3,7 +3,9 @@ session_start();
  
 ini_set('display_startup_errors', true);
 ini_set('display_errors', true);
-error_reporting(E_ALL | E_STRICT);
+
+//error_reporting(E_ALL | E_STRICT);
+error_reporting(0);
 
 $rootPath = dirname(__FILE__);
 $applicationDir = 'app';

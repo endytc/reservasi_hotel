@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b9e5faec-965b-400a-81ac-4f78147947ab" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php" afterPath="$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+    </list>
+    <ignored path="reservasi_hotel.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="reservasi_hotel" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="add.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="-13.25" vertical-offset="207" max-vertical-offset="1395">
+              <folding>
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#fieldset#0;n#div#0;n#div#1;n#form#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db_reservasi_hotel.member" pinned="false" current="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/3a4074f6/3f099c1d-ea7a-43f8-9f07-a8902d1661e1/db_reservasi_hotel..member">
+          <provider editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="function.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lib/function.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="286" column="21" selection-start="6922" selection-end="6948" vertical-scroll-proportion="-6.875" vertical-offset="4125" max-vertical-offset="9030">
+              <folding>
+                <marker date="1394846087374" expanded="true" signature="6542:6580" placeholder="select max($..." />
+                <marker date="1394846087374" expanded="true" signature="7209:7232" placeholder="insert into ..." />
+                <marker date="1394846087374" expanded="true" signature="8025:8047" placeholder="update $tabl..." />
+                <marker date="1394846087374" expanded="true" signature="10616:10981" placeholder="..." />
+                <marker date="1394846087374" expanded="true" signature="11295:11329" placeholder="select * fro..admin..." />
+                <marker date="1394846087374" expanded="true" signature="11382:11507" placeholder="select * fro..member..." />
+                <marker date="1394846087374" expanded="true" signature="11845:11996" placeholder="select * fro..kategori..." />
+                <marker date="1394846087374" expanded="true" signature="11899:11995" placeholder="select id_ka..artikel..." />
+                <marker date="1394846087374" expanded="true" signature="12158:12229" placeholder="select * fro..artikel..." />
+                <marker date="1394846087374" expanded="true" signature="14377:14418" placeholder="select * fro..kategori_artikel..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="0.24193548" vertical-offset="0" max-vertical-offset="765">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app/actions/kamar/cek_kamar.php" />
+        <option value="$PROJECT_DIR$/update_table.sql" />
+        <option value="$PROJECT_DIR$/app/actions/pageoperator/ambil_kunci.php" />
+        <option value="$PROJECT_DIR$/app/actions/pageoperator/kembali_kunci.php" />
+        <option value="$PROJECT_DIR$/app/views/login.php" />
+        <option value="$PROJECT_DIR$/app/actions/pageoperator/rating_kamar.php" />
+        <option value="db-console:/3a4074f6/3f099c1d-ea7a-43f8-9f07-a8902d1661e1/" />
+        <option value="$PROJECT_DIR$/app/actions/pageoperator/laporan_kamar.php" />
+        <option value="$PROJECT_DIR$/app/actions/pageoperator/index.php" />
+        <option value="$PROJECT_DIR$/app/actions/pageoperator/detail_kunjungan.php" />
+        <option value="$PROJECT_DIR$/app/actions/pageadmin/ratting_kamar.php" />
+        <option value="$PROJECT_DIR$/app/actions/pageadmin/laporan_kamar.php" />
+        <option value="dbtable:/3a4074f6/3f099c1d-ea7a-43f8-9f07-a8902d1661e1/db_reservasi_hotel..member" />
+        <option value="$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php" />
+        <option value="$PROJECT_DIR$/app/lib/function.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
+    <option name="y" value="27" />
+    <option name="width" value="1368" />
+    <option name="height" value="742" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reservasi_hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reservasi_hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reservasi_hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reservasi_hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reservasi_hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reservasi_hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reservasi_hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reservasi_hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reservasi_hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pageadmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.lastSelected" value="database.main" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/actions/pageadmin" />
+      <recent name="$PROJECT_DIR$/app/actions/pageoperator" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="f25bea29-9e98-4da7-b8a3-fb414ca4c937" server_name="kosong">
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9e5faec-965b-400a-81ac-4f78147947ab" name="Default" comment="" />
+      <created>1394839407115</created>
+      <updated>1394839407115</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19033232" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20166163" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/actions/kamar/cek_kamar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="959" selection-end="959" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="2055" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/update_table.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="57" selection-start="36" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="566" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/ambil_kunci.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="6" selection-end="92" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="210" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/kembali_kunci.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="36" selection-start="82" selection-end="82" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="210" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="38" selection-start="3169" selection-end="3169" vertical-scroll-proportion="0.49858356" vertical-offset="604" max-vertical-offset="1515" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/pageadmin/kamar/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="36" selection-start="0" selection-end="1548" vertical-scroll-proportion="0.36380598" vertical-offset="0" max-vertical-offset="735" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/rating_kamar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="15" selection-start="491" selection-end="491" vertical-scroll-proportion="0.22677596" vertical-offset="142" max-vertical-offset="690" />
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/3a4074f6/3f099c1d-ea7a-43f8-9f07-a8902d1661e1/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="29" selection-start="0" selection-end="114" vertical-scroll-proportion="0.09146342" vertical-offset="0" max-vertical-offset="328" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/laporan_kamar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="26" selection-start="4007" selection-end="4007" vertical-scroll-proportion="0.38243628" vertical-offset="1350" max-vertical-offset="2100" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="69" selection-start="5647" selection-end="5716" vertical-scroll-proportion="-0.6666667" vertical-offset="1904" max-vertical-offset="2805" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/detail_kunjungan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="148" column="0" selection-start="6822" selection-end="6831" vertical-scroll-proportion="-10.041667" vertical-offset="1979" max-vertical-offset="2910" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/pageadmin/history_kunjungan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="45" selection-start="51" selection-end="51" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="135" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/pageadmin/rating_kamar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="36" selection-start="42" selection-end="42" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="135" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/pageadmin/laporan_kamar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="41" selection-start="47" selection-end="47" vertical-scroll-proportion="0.04360465" vertical-offset="0" max-vertical-offset="344" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="-13.25" vertical-offset="207" max-vertical-offset="1395">
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#fieldset#0;n#div#0;n#div#1;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3a4074f6/3f099c1d-ea7a-43f8-9f07-a8902d1661e1/db_reservasi_hotel..member">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="286" column="21" selection-start="6922" selection-end="6948" vertical-scroll-proportion="-6.875" vertical-offset="4125" max-vertical-offset="9030">
+          <folding>
+            <marker date="1394846087374" expanded="true" signature="6542:6580" placeholder="select max($..." />
+            <marker date="1394846087374" expanded="true" signature="7209:7232" placeholder="insert into ..." />
+            <marker date="1394846087374" expanded="true" signature="8025:8047" placeholder="update $tabl..." />
+            <marker date="1394846087374" expanded="true" signature="10616:10981" placeholder="..." />
+            <marker date="1394846087374" expanded="true" signature="11295:11329" placeholder="select * fro..admin..." />
+            <marker date="1394846087374" expanded="true" signature="11382:11507" placeholder="select * fro..member..." />
+            <marker date="1394846087374" expanded="true" signature="11845:11996" placeholder="select * fro..kategori..." />
+            <marker date="1394846087374" expanded="true" signature="11899:11995" placeholder="select id_ka..artikel..." />
+            <marker date="1394846087374" expanded="true" signature="12158:12229" placeholder="select * fro..artikel..." />
+            <marker date="1394846087374" expanded="true" signature="14377:14418" placeholder="select * fro..kategori_artikel..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="0.24193548" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

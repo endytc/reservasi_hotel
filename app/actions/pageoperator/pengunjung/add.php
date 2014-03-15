@@ -1,6 +1,13 @@
 <?php
 if($_POST){
     $is_success         = _insert('pengunjung', $_POST['pengunjung']);
+    if(isset($_POST['member']) && $_POST['member']['email']!=''){
+        $id_pengunjung=_select_max_id('pengunjung','id');
+        $_POST['member']['id_pengunjung']=$id_pengunjung;
+        $_POST['member']['password']=md5($_POST['member']['password']);
+
+        _insert('member',$_POST['member']);
+    }
     if($is_success){
         $_SESSION['success']="Data pengunjung berhasil ditambahkan";
     }else{
@@ -24,6 +31,12 @@ if($_POST){
                     </div>    
                 </div>
                 <div class="control-group">
+                    <label class="control-label required">Alamat <span class="required">*</span></label>
+                    <div class="controls">
+                        <textarea class="required" name="pengunjung[alamat]" style="width: 70%"></textarea>
+                    </div>
+                </div>
+                <div class="control-group">
                     <label class="control-label required">Tanda Pengenal <span class="required">*</span></label>                
                     <div class="controls">
                         <input type="text" class="required" name="pengunjung[tanda_pengenal]" value="">
@@ -40,6 +53,26 @@ if($_POST){
                     <div class="controls">
                         <input type="text" class="required" name="pengunjung[no_hp]" value="">
                     </div>    
+                </div>
+                <hr>
+                <div class="control-group">
+                    <label class="control-label required">Username</label>
+                    <div class="controls">
+                        <input type="text" class="" name="member[username]" value="">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label required">Password</label>
+                    <div class="controls">
+                        <input type="password" class="" name="member[password]" value="grahaprima">
+                        <br><i>*) Default grahaprima</i>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label required">Email </label>
+                    <div class="controls">
+                        <input type="text" class="" name="member[email]" value="">
+                    </div>
                 </div>
             </fieldset>
         </div><!-- form -->

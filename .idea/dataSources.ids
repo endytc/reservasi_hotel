@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="MySQL - db_reservasi_hotel@localhost" uuid="3f099c1d-ea7a-43f8-9f07-a8902d1661e1">
+    <database-info product="MySQL" version="5.5.31" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.26 ( Revision: ${bzr.revision-id} )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="db_reservasi_hotel"/>
+    <table name="admin" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="username" sqlType="VARCHAR" length="30" precision="0" nullable="true" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" length="32" precision="0" nullable="true" jdbcType="12"/>
+      <column name="nama" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="type" sqlType="ENUM" length="8" precision="0" nullable="false" jdbcType="1" def="J2FkbWluJw=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FKartikel714814" table="artikel" schema="" catalog="db_reservasi_hotel" columns="id_admin"/>
+    </table>
+    <table name="artikel" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="judul" sqlType="VARCHAR" length="30" precision="0" nullable="false" jdbcType="12"/>
+      <column name="isi" sqlType="TEXT" length="65535" precision="0" nullable="true" jdbcType="-1"/>
+      <column name="id_kategori" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="id_admin" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="path_gambar" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="is_published" sqlType="TINYINT" length="3" precision="0" nullable="false" jdbcType="-6"/>
+      <column name="waktu_post" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FKartikel714814" columns="id_admin" ref-table="admin" ref-schema="" ref-catalog="db_reservasi_hotel" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKartikel800515" columns="id_kategori" ref-table="kategori_artikel" ref-schema="" ref-catalog="db_reservasi_hotel" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="bank" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nama_bank" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12"/>
+      <column name="atas_nama" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="no_rekening" sqlType="VARCHAR" length="30" precision="0" nullable="false" jdbcType="12"/>
+      <column name="gambar" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="pembayaran_ibfk_1" table="pembayaran" schema="" catalog="db_reservasi_hotel" columns="id_bank"/>
+    </table>
+    <table name="checkin" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="waktu" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="id_pengunjung" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="status" sqlType="ENUM" length="10" precision="0" nullable="false" jdbcType="1" def="J3BlbmRpbmcn"/>
+      <column name="booked_via" sqlType="ENUM" length="7" precision="0" nullable="false" jdbcType="1" def="J29ubGluZSc="/>
+      <column name="jumlah_poin" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="nilai_poin" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="checkin_ibfk_1" columns="id_pengunjung" ref-table="pengunjung" ref-schema="" ref-catalog="db_reservasi_hotel" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="detail_checkin_ibfk_1" table="detail_checkin" schema="" catalog="db_reservasi_hotel" columns="id_checkin"/>
+      <exported-key name="fasilitas_pengunjung_ibfk_1" table="fasilitas_pengunjung" schema="" catalog="db_reservasi_hotel" columns="id_checkin"/>
+      <exported-key name="pembayaran_ibfk_2" table="pembayaran" schema="" catalog="db_reservasi_hotel" columns="id_checkin"/>
+    </table>
+    <table name="detail_checkin" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="id_kamar" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="masuk" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="keluar" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="biaya" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="id_pengunjung" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="jumlah_point_dipakai" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="id_checkin" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="waktu_mengambil_kunci" sqlType="TIMESTAMP" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="waktu_mengembalikan_kunci" sqlType="TIMESTAMP" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="detail_checkin_ibfk_1" columns="id_checkin" ref-table="checkin" ref-schema="" ref-catalog="db_reservasi_hotel" ref-columns="id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="FKcheckin262281" columns="id_kamar" ref-table="kamar" ref-schema="" ref-catalog="db_reservasi_hotel" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKcheckin849036" columns="id_pengunjung" ref-table="pengunjung" ref-schema="" ref-catalog="db_reservasi_hotel" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="fasilitas" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nama" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="keterangan" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="harga" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="id_kategori" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="gambar" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FKfasilitas910721" columns="id_kategori" ref-table="kategori_fasilitas" ref-schema="" ref-catalog="db_reservasi_hotel" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FKfasilitas_91676" table="fasilitas_pengunjung" schema="" catalog="db_reservasi_hotel" columns="id_fasilitas"/>
+    </table>
+    <table name="fasilitas_pengunjung" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="id_fasilitas" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="id_checkin" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="biaya" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="qty" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="waktu" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="fasilitas_pengunjung_ibfk_1" columns="id_checkin" ref-table="checkin" ref-schema="" ref-catalog="db_reservasi_hotel" ref-columns="id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="FKfasilitas_91676" columns="id_fasilitas" ref-table="fasilitas" ref-schema="" ref-catalog="db_reservasi_hotel" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FKfasilitas_730432" unique="false" columns="id_checkin"/>
+    </table>
+    <table name="kamar" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="id_kelas" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="nama" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="keterangan" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FKkamar1636" columns="id_kelas" ref-table="kelas" ref-schema="" ref-catalog="db_reservasi_hotel" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FKcheckin262281" table="detail_checkin" schema="" catalog="db_reservasi_hotel" columns="id_kamar"/>
+    </table>
+    <table name="kategori_artikel" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nama" sqlType="VARCHAR" length="30" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FKartikel800515" table="artikel" schema="" catalog="db_reservasi_hotel" columns="id_kategori"/>
+    </table>
+    <table name="kategori_fasilitas" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nama" sqlType="VARCHAR" length="30" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FKfasilitas910721" table="fasilitas" schema="" catalog="db_reservasi_hotel" columns="id_kategori"/>
+    </table>
+    <table name="kelas" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nama" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="biaya_per_hari" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="gambar" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="star" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FKkamar1636" table="kamar" schema="" catalog="db_reservasi_hotel" columns="id_kelas"/>
+    </table>
+    <table name="member" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="id_pengunjung" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="username" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" remarks="wqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqA="/>
+      <column name="password" sqlType="VARCHAR" length="32" precision="0" nullable="true" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <foreign-key name="FKmember763613" columns="id_pengunjung" ref-table="pengunjung" ref-schema="" ref-catalog="db_reservasi_hotel" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="email" unique="true" columns="email"/>
+      <index name="username" unique="true" columns="username"/>
+    </table>
+    <table name="pembayaran" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="id_checkin" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="nominal" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="keterangan" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="gambar" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="id_bank" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="pembayaran_ibfk_1" columns="id_bank" ref-table="bank" ref-schema="" ref-catalog="db_reservasi_hotel" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="pembayaran_ibfk_2" columns="id_checkin" ref-table="checkin" ref-schema="" ref-catalog="db_reservasi_hotel" ref-columns="id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="pengunjung" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nama" sqlType="VARCHAR" length="30" precision="0" nullable="true" jdbcType="12"/>
+      <column name="alamat" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="tanda_pengenal" sqlType="VARCHAR" length="10" precision="0" nullable="true" jdbcType="12"/>
+      <column name="no_tanda_pengenal" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" remarks="wqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqAgwqA="/>
+      <column name="no_hp" sqlType="VARCHAR" length="15" precision="0" nullable="true" jdbcType="12"/>
+      <column name="jumlah_poin" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="checkin_ibfk_1" table="checkin" schema="" catalog="db_reservasi_hotel" columns="id_pengunjung"/>
+      <exported-key name="FKcheckin849036" table="detail_checkin" schema="" catalog="db_reservasi_hotel" columns="id_pengunjung"/>
+      <exported-key name="FKmember763613" table="member" schema="" catalog="db_reservasi_hotel" columns="id_pengunjung"/>
+    </table>
+    <table name="promo" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="isi" sqlType="TEXT" length="65535" precision="0" nullable="false" jdbcType="-1"/>
+      <column name="waktu" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="judul" sqlType="VARCHAR" length="30" precision="0" nullable="false" jdbcType="12"/>
+      <column name="transaksi_min" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="transaksi_max" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="promo_pengunjung" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="id_pengunjung" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="id_promo" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_pengunjung,id_promo"/>
+    </table>
+    <table name="setting" schema="" catalog="db_reservasi_hotel" type="TABLE">
+      <column name="kd" sqlType="VARCHAR" length="10" precision="0" nullable="true" jdbcType="12"/>
+      <column name="keterangan" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="isi" sqlType="VARCHAR" length="30" precision="0" nullable="true" jdbcType="12"/>
+    </table>
+  </data-source>
+</component>

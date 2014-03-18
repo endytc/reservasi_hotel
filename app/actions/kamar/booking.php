@@ -29,7 +29,7 @@ if(!is_login()){
         //jika sisa booking lebih dari 6 jam (tidak sampe satu hari)
         if($selisih%24>=6){
             $biaya+=$kelas['biaya_per_hari'];
-        }else{
+        }elseif($selisih%24!=0){
             $biaya+=$kelas['biaya_per_hari']*0.5;
         }
         $checkIn['id_kamar']=$kamar;

@@ -11,7 +11,7 @@
         $biaya=($selisih/24)*$kelas['biaya_per_hari'];
         if($selisih%24>=6){
             $biaya+=$kelas['biaya_per_hari'];
-        }else{
+        }elseif($selisih%24!=0){
             $biaya+=$kelas['biaya_per_hari']*0.5;
         }
         $checkIn['id_kamar']=$kamar;

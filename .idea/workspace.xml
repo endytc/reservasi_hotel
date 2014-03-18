@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9e5faec-965b-400a-81ac-4f78147947ab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php" afterPath="$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/kamar/booking.php" afterPath="$PROJECT_DIR$/app/actions/kamar/booking.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/pageoperator/booking.php" afterPath="$PROJECT_DIR$/app/actions/pageoperator/booking.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="reservasi_hotel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,23 +30,9 @@
       <file leaf-file-name="add.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="-13.25" vertical-offset="207" max-vertical-offset="1395">
-              <folding>
-                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#fieldset#0;n#div#0;n#div#1;n#form#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db_reservasi_hotel.member" pinned="false" current="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/3a4074f6/3f099c1d-ea7a-43f8-9f07-a8902d1661e1/db_reservasi_hotel..member">
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+            <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="1395">
               <folding />
             </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
@@ -70,11 +56,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="0.24193548" vertical-offset="0" max-vertical-offset="765">
+            <state line="25" column="21" selection-start="750" selection-end="750" vertical-scroll-proportion="-10.0" vertical-offset="135" max-vertical-offset="765">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="booking.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/actions/kamar/booking.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="30" selection-start="1457" selection-end="1471" vertical-scroll-proportion="-9.791667" vertical-offset="230" max-vertical-offset="780">
+              <folding>
+                <marker date="1395112263945" expanded="true" signature="1123:1223" placeholder="select kelas..kamar..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="booking.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/booking.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="30" selection-start="664" selection-end="664" vertical-scroll-proportion="0.17117117" vertical-offset="138" max-vertical-offset="495">
+              <folding>
+                <marker date="1395112280701" expanded="true" signature="401:501" placeholder="select kelas..kamar..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,15 +116,16 @@
         <option value="$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php" />
         <option value="$PROJECT_DIR$/app/lib/function.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/app/actions/kamar/booking.php" />
+        <option value="$PROJECT_DIR$/app/actions/pageoperator/booking.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
     <option name="y" value="27" />
-    <option name="width" value="1368" />
-    <option name="height" value="742" />
+    <option name="width" value="1366" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -212,7 +221,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pageadmin" />
+              <option name="myItemId" value="checkin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -267,27 +276,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19033232" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32744783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18986385" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20166163" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.204236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -311,6 +320,38 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="286" column="21" selection-start="6922" selection-end="6948" vertical-scroll-proportion="0.0" vertical-offset="4125" max-vertical-offset="9030">
+          <folding>
+            <marker date="1394846087374" expanded="true" signature="6542:6580" placeholder="select max($..." />
+            <marker date="1394846087374" expanded="true" signature="7209:7232" placeholder="insert into ..." />
+            <marker date="1394846087374" expanded="true" signature="8025:8047" placeholder="update $tabl..." />
+            <marker date="1394846087374" expanded="true" signature="10616:10981" placeholder="..." />
+            <marker date="1394846087374" expanded="true" signature="11295:11329" placeholder="select * fro..admin..." />
+            <marker date="1394846087374" expanded="true" signature="11382:11507" placeholder="select * fro..member..." />
+            <marker date="1394846087374" expanded="true" signature="11845:11996" placeholder="select * fro..kategori..." />
+            <marker date="1394846087374" expanded="true" signature="11899:11995" placeholder="select id_ka..artikel..." />
+            <marker date="1394846087374" expanded="true" signature="12158:12229" placeholder="select * fro..artikel..." />
+            <marker date="1394846087374" expanded="true" signature="14377:14418" placeholder="select * fro..kategori_artikel..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/kamar/cek_kamar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="959" selection-end="959" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="2055" />
@@ -383,18 +424,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="-13.25" vertical-offset="207" max-vertical-offset="1395">
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#fieldset#0;n#div#0;n#div#1;n#form#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="1395">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/3a4074f6/3f099c1d-ea7a-43f8-9f07-a8902d1661e1/db_reservasi_hotel..member">
       <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100" />
       </provider>
       <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
         <state />
@@ -420,8 +457,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="0.24193548" vertical-offset="0" max-vertical-offset="765">
+        <state line="25" column="21" selection-start="750" selection-end="750" vertical-scroll-proportion="-10.0" vertical-offset="135" max-vertical-offset="765">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/kamar/booking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="30" selection-start="1457" selection-end="1471" vertical-scroll-proportion="-9.791667" vertical-offset="230" max-vertical-offset="780">
+          <folding>
+            <marker date="1395112263945" expanded="true" signature="1123:1223" placeholder="select kelas..kamar..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/booking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="30" selection-start="664" selection-end="664" vertical-scroll-proportion="0.17117117" vertical-offset="138" max-vertical-offset="495">
+          <folding>
+            <marker date="1395112280701" expanded="true" signature="401:501" placeholder="select kelas..kamar..." />
+          </folding>
         </state>
       </provider>
     </entry>

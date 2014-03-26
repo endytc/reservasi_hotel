@@ -1,8 +1,8 @@
 <?php 
 session_start();
  
-ini_set('display_startup_errors', true);
-ini_set('display_errors', true);
+ini_set('display_startup_errors', false);
+ini_set('display_errors', false);
 
 //error_reporting(E_ALL | E_STRICT);
 error_reporting(0);

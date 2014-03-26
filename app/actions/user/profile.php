@@ -1,12 +1,13 @@
 <?php
 $user=  get_user_login();
 if($_POST){
+
     if($_POST['member']['password']!=''){
         $_POST['member']['password']=  md5($_POST['member']['password']);
     }else
         unset ($_POST['member']['password']);
-    _update('member', $_POST['member'], "where id='$user[id]'");
-    _update('pengunjung', $_POST['pengunjung'], "where id='$user[id]'");
+    _update('member', $_POST['member'], "id_pengunjung='$user[id]'");
+    _update('pengunjung', $_POST['personal'], "id='$user[id]'");
     
 }
 ?>
@@ -17,7 +18,7 @@ if($_POST){
             <h3>Update Account</h3>
         </div><!--end titleHeader-->
 
-        <form method="POST" action="<?php echo app_base_url('user/registrasi_proses')?>" class="form-horizontal" id="registrasi-form">
+        <form method="POST" action="<?php echo app_base_url('user/profile')?>" class="form-horizontal" id="registrasi-form">
             <legend>&nbsp;&nbsp;&nbsp;&nbsp;1. Data Personal</legend>
             <div class="control-group ">
                 <label class="control-label" >Nama </label>
@@ -40,7 +41,7 @@ if($_POST){
             <div class="control-group ">
                 <label class="control-label" >Tanda Pengenal</label>
                 <div class="controls">
-                    <input type="text" name="member[tanda_pengenal]" value="<?php echo $user['tanda_pengenal']?>"class="required" id="" placeholder="">
+                    <input type="text" name="personal[tanda_pengenal]" value="<?php echo $user['tanda_pengenal']?>"class="required" id="" placeholder="">
                 </div>
             </div>
             <div class="control-group ">

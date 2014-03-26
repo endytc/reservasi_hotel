@@ -7,6 +7,14 @@ if(isset($_GET['act']) && $_GET['act']=='delete'){
         $_SESSION['failed']="Pembayaran gagal dihapus";
     redirect('pageoperator/detail_kunjungan?id='.$_GET['id']);
 }
+if(isset($_GET['act']) && $_GET['act']=='batalkan_poin'){
+    $qry=  _query("update checkin set jumlah_poin=NULL where id='$_GET[id]'");
+    if($qry){
+        $_SESSION['success']="Pemakaian poin berhasil dihapus";
+    }else
+        $_SESSION['failed']="Pemakaian poin gagal dihapus";
+    redirect('pageoperator/detail_kunjungan?id='.$_GET['id']);
+}
 if(isset($_GET['act']) && $_GET['act']=='delete_fasilitas'){
     $qry=  _query("delete from fasilitas_pengunjung where id='$_GET[id_fasilitas]'");
     if($qry){
@@ -105,7 +113,11 @@ $fasilitasList=  _select_arr("select
 <div class="clear"></div><br>
 <?php if($_SESSION['status_user']=='operator'){?>
 <a href="<?php echo app_base_url("pageoperator/bayar?id=$_GET[id]") ?>" class="btn btn-primary" target="ajax-modal" title="bayar">Bayar</a>
-<?php }?>
+<?php }
+if($detail['jumlah_poin']==null){
+    ?><a href="<?php echo app_base_url("checkin/pakai_poin?id=$detail[id]&operator=1")?>" target="ajax-modal" title="pakai poin" class="btn btn-primary">Pakai Poin</a> <?php
+}
+?>
 <div class="clear"></div><br>
 <table class="table table-bordered">
     <thead>
@@ -118,7 +130,20 @@ $fasilitasList=  _select_arr("select
         </tr>
     </thead>
     <tbody>
-        <?php 
+        <?php
+        if($detail['jumlah_poin']<>null){
+            ?>
+            <td>Pakai Poin</td>
+            <td><?php echo rupiah($detail['jumlah_poin']*$detail['nilai_poin'],false)?></td>
+            <td>-</td>
+            <td>-</td>
+            <td>
+                <a href="<?php echo app_base_url("pageoperator/detail_kunjungan?act=batalkan_poin&id=$_GET[id]")?>" onclick="return window.confirm('apakah anda yakin?')">
+                    <i class="icon icon-remove-circle"></i>
+                </a>
+            </td>
+            <?
+        }
         $jumlahBayar=0;
         foreach($pembayaranList as $bayar){
             $jumlahBayar+=$bayar['nominal']?>

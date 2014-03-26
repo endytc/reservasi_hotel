@@ -7,8 +7,7 @@
 ?>
 <h2 class="title">Data setting</h2>
 <hr>
-<a href="<?php echo app_base_url('pageadmin/setting/add')?>" target="ajax-modal" class="btn btn-primary">+ Tambah</a>
-<br><br>
+
 <table class="table table-bordered">
     <thead>
     <tr>

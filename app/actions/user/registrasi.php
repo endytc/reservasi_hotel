@@ -57,13 +57,13 @@
             <div class="control-group">
                 <label class="control-label" for="inputPass">Username</label>
                 <div class="controls">
-                    <input type="text" name="member[username]" >
+                    <input type="text" name="member[username]" class="required">
                 </div>
             </div><!--end control-group-->
             <div class="control-group">
                 <label class="control-label" for="inputPass">Password: </label>
                 <div class="controls">
-                    <input type="password" name="member[password]" id="password" placeholder="**********">
+                    <input type="password" name="member[password]" id="password" placeholder="**********" class="required">
                 </div>
             </div><!--end control-group-->
 

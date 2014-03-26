@@ -23,13 +23,14 @@ select checkin.*,
     (select count(*) from detail_checkin where id_checkin=checkin.id) as jumlah_kamar,
     ((select sum(biaya) from detail_checkin where detail_checkin.id_checkin=checkin.id)+
     IFNULL((select sum(biaya*qty) from fasilitas_pengunjung where fasilitas_pengunjung.id_checkin=checkin.id),0))as jumlah_tagihan,
-    (select sum(nominal) from pembayaran where id_checkin=checkin.id) as jumlah_bayar,
+    ((select sum(nominal) from pembayaran where id_checkin=checkin.id)) as jumlah_bayar,
     pengunjung.nama as pengunjung
     from checkin 
     join pengunjung on pengunjung.id=checkin.id_pengunjung
     where  checkin.id='$_GET[id]'");
 $uangMuka=  _select_unique_result("select * from setting where kd='min_dp'");
 $uangMuka=$uangMuka['isi'];
+$tagihan['jumlah_bayar']=$tagihan['jumlah_bayar']+($tagihan['jumlah_poin']*$tagihan['nilai_poin']);
 ?>
 <form action="<?php echo app_base_url('pageoperator/bayar')?>" method="POST" id="addbayar" class="form-horizontal"  enctype="multipart/form-data">
     <div class="modal-header">
@@ -43,7 +44,7 @@ $uangMuka=$uangMuka['isi'];
                 <div class="control-group">
                     <label class="control-label required">Jumlah Tagihan</label>                
                     <div class="controls">
-                        <label class="inline" ><?php echo rupiah($tagihan['jumlah_tagihan'],false)?></label>
+                        <label class="inline" ><?php echo rupiah($tagihan['jumlah_tagihan'],false);?></label>
                     </div>    
                 </div>
                 <div class="control-group">

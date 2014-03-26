@@ -131,7 +131,9 @@ if($detail['jumlah_poin']==null){
     </thead>
     <tbody>
         <?php
+        $jumlahBayar=0;
         if($detail['jumlah_poin']<>null){
+            $jumlahBayar+=$detail['jumlah_poin']*$detail['nilai_poin'];
             ?>
             <td>Pakai Poin</td>
             <td><?php echo rupiah($detail['jumlah_poin']*$detail['nilai_poin'],false)?></td>
@@ -144,7 +146,7 @@ if($detail['jumlah_poin']==null){
             </td>
             <?
         }
-        $jumlahBayar=0;
+
         foreach($pembayaranList as $bayar){
             $jumlahBayar+=$bayar['nominal']?>
         <tr>

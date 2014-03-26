@@ -244,14 +244,14 @@ function redirect($uri = '', $method = 'location', $http_response_code = 302) {
     if (!preg_match('#^https?://#i', $uri)) {
         $uri = app_base_url($uri);
     }
-    echo'<script type="text/javascript">location.href="' . $uri . '"</script>';
-//		switch($method)
-//		{
-//			case 'refresh'	: header("Refresh:0;url=".$uri);
-//				break;
-//			default			: header("Location: ".$uri, TRUE, $http_response_code);
-//				break;
-//		}
+//    echo'<script type="text/javascript">location.href="' . $uri . '"</script>';
+		switch($method)
+		{
+			case 'refresh'	: header("Refresh:0;url=".$uri);
+				break;
+			default			: header("Location: ".$uri, TRUE, $http_response_code);
+				break;
+		}
     exit;
 }
 

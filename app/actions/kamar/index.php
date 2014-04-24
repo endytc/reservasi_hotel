@@ -1,5 +1,5 @@
 <?php
-$kelasQry=  _select_arr("select *,(select count(*) from kamar where kamar.id_kelas=kelas.id) as jumlah_kamar from kelas");
+$kelasQry=  _select_arr("select *,(select count(*) from kamar where kamar.id_kelas=kelas.id) as jumlah_kamar from kelas order by kelas.biaya_per_hari");
 ?>
     <div class="row">
         <ul class="hProductItems clearfix">

@@ -1,6 +1,17 @@
 <?php
+$user=get_user_login();
 $kelasWithGambar=  _select_arr("select * from kelas where kelas.gambar<>''");
-$fasilitasList=  _select_arr("select * from fasilitas");
+
+$fasilitasList=  _select_arr("select * from fasilitas
+  order by (select sum(fasilitas_pengunjung.qty) from fasilitas_pengunjung
+    join checkin on checkin.id=fasilitas_pengunjung.id_checkin
+    where checkin.id_pengunjung='$user[id]' and fasilitas_pengunjung.id_fasilitas=fasilitas.id
+  ) desc, (select sum(fasilitas_pengunjung.qty) from fasilitas_pengunjung
+    join checkin on checkin.id=fasilitas_pengunjung.id_checkin
+  where fasilitas_pengunjung.id_fasilitas=fasilitas.id
+  ) desc
+");
+
 ?>
 <div class="span8">
     <div class="flexslider">

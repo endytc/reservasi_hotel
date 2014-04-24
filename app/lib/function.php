@@ -483,13 +483,14 @@ function get_artikel_menu(){
     return $artikelArr;
 }
 function getMenuAdmin(){
+    $user=get_user_login();
     if(is_admin())
         return array(
             array('title'=>'History Kunjungan','url'=>'history_kunjungan'),
             array('title'=>'History Perpengunjung','url'=>'history_kunjungan_perpengunjung'),
             array('title'=>'Rating Kamar','url'=>'rating_kamar'),
             array('title'=>'Laporan Reservasi Per Kamar','url'=>'laporan_kamar'),
-            array('title'=>'Admin','url'=>'admin'),
+            array('title'=>'Admin','url'=>'admin/edit?id='.$user['id']),
             array('title'=>'Operator','url'=>'operator'),
             array('title'=>'Kategori Fasilitas','url'=>'kategori_fasilitas'),
             array('title'=>'Fasilitas','url'=>'fasilitas'),

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9e5faec-965b-400a-81ac-4f78147947ab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/pageoperator/detail_kunjungan.php" afterPath="$PROJECT_DIR$/app/actions/pageoperator/detail_kunjungan.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/pageadmin/setting/index.php" afterPath="$PROJECT_DIR$/app/actions/pageadmin/setting/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/checkin/pakai_poin.php" afterPath="$PROJECT_DIR$/app/actions/checkin/pakai_poin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/user/profile.php" afterPath="$PROJECT_DIR$/app/actions/user/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/user/registrasi.php" afterPath="$PROJECT_DIR$/app/actions/user/registrasi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/function.php" afterPath="$PROJECT_DIR$/app/lib/function.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/index.php" afterPath="$PROJECT_DIR$/app/actions/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/kamar/index.php" afterPath="$PROJECT_DIR$/app/actions/kamar/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/kamar/top.php" afterPath="$PROJECT_DIR$/app/actions/kamar/top.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="reservasi_hotel.iws" />
@@ -30,86 +29,111 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="add.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="-13.25" vertical-offset="207" max-vertical-offset="1395">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="booking.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/actions/kamar/booking.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="7" selection-start="510" selection-end="510" vertical-scroll-proportion="-0.625" vertical-offset="120" max-vertical-offset="780">
-              <folding>
-                <marker date="1395788368774" expanded="true" signature="1123:1223" placeholder="select kelas..kamar..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="booking.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/booking.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="26" selection-start="190" selection-end="190" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="495">
-              <folding>
-                <marker date="1395112280701" expanded="true" signature="401:501" placeholder="select kelas..kamar..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="detail_kunjungan.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/detail_kunjungan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="41" selection-start="1434" selection-end="1434" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="3285">
+            <state line="140" column="22" selection-start="6454" selection-end="6454" vertical-scroll-proportion="-7.5" vertical-offset="1920" max-vertical-offset="3315">
               <folding>
-                <element signature="n#style#0;n#div#0;n#h3#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#0;n#tfoot#0;n#table#1;n#!!top" expanded="true" />
-                <marker date="1395790754850" expanded="true" signature="76:125" placeholder="delete from ..." />
-                <marker date="1395790754850" expanded="true" signature="411:467" placeholder="update check..." />
-                <marker date="1395790754850" expanded="true" signature="764:827" placeholder="delete from ..." />
-                <marker date="1395790754850" expanded="true" signature="1094:1476" placeholder="select check..checkin..." />
-                <marker date="1395790754850" expanded="true" signature="1165:1245" placeholder="select sum(b..detail_checkin..." />
-                <marker date="1395790754850" expanded="true" signature="1260:1356" placeholder="select sum(b..fasilitas_pengunjung..." />
-                <marker date="1395790754850" expanded="true" signature="1516:1649" placeholder="select detai..detail_checkin..." />
-                <marker date="1395790754850" expanded="true" signature="1684:1837" placeholder="select pemba..pembayaran..." />
-                <marker date="1395790754850" expanded="true" signature="1871:2147" placeholder="select fasil..fasilitas_pengunjung..." />
+                <marker date="1395872111808" expanded="true" signature="76:125" placeholder="delete from ..." />
+                <marker date="1395872111808" expanded="true" signature="411:467" placeholder="update check..." />
+                <marker date="1395872111808" expanded="true" signature="764:827" placeholder="delete from ..." />
+                <marker date="1395872111808" expanded="true" signature="1094:1476" placeholder="select check..checkin..." />
+                <marker date="1395872111808" expanded="true" signature="1165:1245" placeholder="select sum(b..detail_checkin..." />
+                <marker date="1395872111808" expanded="true" signature="1260:1356" placeholder="select sum(b..fasilitas_pengunjung..." />
+                <marker date="1395872111808" expanded="true" signature="1516:1649" placeholder="select detai..detail_checkin..." />
+                <marker date="1395872111808" expanded="true" signature="1684:1837" placeholder="select pemba..pembayaran..." />
+                <marker date="1395872111808" expanded="true" signature="1871:2147" placeholder="select fasil..fasilitas_pengunjung..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registrasi.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/actions/user/registrasi.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="121" selection-start="3166" selection-end="3166" vertical-scroll-proportion="-5.5833335" vertical-offset="841" max-vertical-offset="1665">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/actions/user/profile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="23" selection-start="240" selection-end="240" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="1710">
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/actions/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="10" selection-start="149" selection-end="149" vertical-scroll-proportion="0.14563107" vertical-offset="0" max-vertical-offset="1395">
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1398349534117" expanded="true" signature="55:504" placeholder="select *,(se..kelas..." />
+                <marker date="1398349534117" expanded="true" signature="65:121" placeholder="select count..kamar..." />
+                <marker date="1398349534117" expanded="true" signature="162:337" placeholder="select count..detail_checkin..." />
+                <marker date="1398349534117" expanded="true" signature="348:485" placeholder="select count..detail_checkin..." />
+                <marker date="1398349534117" expanded="true" signature="542:704" placeholder="select *,art..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="top.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/actions/kamar/top.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="42" selection-start="334" selection-end="343" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="1320">
+              <folding>
+                <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1398348361257" expanded="true" signature="62:104" placeholder="select * fro..kelas..." />
+                <marker date="1398348361257" expanded="true" signature="139:596" placeholder="select * fro..fasilitas..." />
+                <marker date="1398348361257" expanded="true" signature="175:395" placeholder="select sum(f..fasilitas_pengunjung..." />
+                <marker date="1398348361257" expanded="true" signature="407:587" placeholder="select sum(f..fasilitas_pengunjung..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/actions/kamar/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="765">
+              <folding>
+                <marker date="1398349350582" expanded="true" signature="31:155" placeholder="select *,(se..kelas..." />
+                <marker date="1398349350582" expanded="true" signature="41:97" placeholder="select count..kamar..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MySQL - db_reservasi_hotel@localhost" pinned="false" current="false" current-in-tab="false">
+        <entry file="dbDummy://db-console:/3a4074f6/3f099c1d-ea7a-43f8-9f07-a8902d1661e1/">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="569" selection-end="1000" vertical-scroll-proportion="-5.2413793" vertical-offset="43" max-vertical-offset="405">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bayar.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/bayar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="0" selection-start="1629" selection-end="1728" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="1650">
+              <folding>
+                <marker date="1395872019608" expanded="true" signature="880:922" placeholder="select * fro..checkin..." />
+                <marker date="1395872019608" expanded="true" signature="960:1519" placeholder="select check..checkin..." />
+                <marker date="1395872019608" expanded="true" signature="983:1046" placeholder="select count..detail_checkin..." />
+                <marker date="1395872019608" expanded="true" signature="1071:1151" placeholder="select sum(b..detail_checkin..." />
+                <marker date="1395872019608" expanded="true" signature="1166:1262" placeholder="select sum(b..fasilitas_pengunjung..." />
+                <marker date="1395872019608" expanded="true" signature="1292:1355" placeholder="select sum(n..pembayaran..." />
+                <marker date="1395872019608" expanded="true" signature="1558:1597" placeholder="select * fro..setting..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/actions/pageadmin/setting/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="286" selection-end="286" vertical-scroll-proportion="0.2616279" vertical-offset="0" max-vertical-offset="660">
+            <state line="18" column="12" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="660">
               <folding>
                 <marker date="1395792308160" expanded="true" signature="203:224" placeholder="select * fro..setting..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/pengunjung/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="36" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="1050">
+              <folding>
+                <marker date="1395844317924" expanded="true" signature="418:442" placeholder="select * fro..pengunjung..." />
               </folding>
             </state>
           </provider>
@@ -118,7 +142,7 @@
       <file leaf-file-name="pakai_poin.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/actions/checkin/pakai_poin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="30" selection-start="1956" selection-end="1956" vertical-scroll-proportion="-21.166666" vertical-offset="92" max-vertical-offset="870">
+            <state line="15" column="12" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="870">
               <folding>
                 <marker date="1395789926804" expanded="true" signature="238:280" placeholder="select * fro..checkin..." />
                 <marker date="1395789926804" expanded="true" signature="318:464" placeholder="select * fro..member..." />
@@ -130,31 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="approve.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/approve.php">
+      <file leaf-file-name="add.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/actions/pageadmin/kamar/add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="10" selection-start="392" selection-end="392" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="420">
-              <folding>
-                <marker date="1395197178545" expanded="true" signature="40:272" placeholder="select check..checkin..." />
-                <marker date="1395197178545" expanded="true" signature="63:126" placeholder="select sum(n..pembayaran..." />
-                <marker date="1395197178545" expanded="true" signature="150:215" placeholder="select sum(b..detail_checkin..." />
-                <marker date="1395197178545" expanded="true" signature="419:460" placeholder="select * fro..setting..." />
-                <marker date="1395197178545" expanded="true" signature="766:825" placeholder="select * fro..pengunjung..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="history_checkin.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/actions/checkin/history_checkin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="12" selection-start="673" selection-end="673" vertical-scroll-proportion="-5.0" vertical-offset="150" max-vertical-offset="930">
-              <folding>
-                <marker date="1382225862099" expanded="true" signature="60:421" placeholder="select *, (s..checkin..." />
-                <marker date="1382225862099" expanded="true" signature="75:138" placeholder="select count..detail_checkin..." />
-                <marker date="1382225862099" expanded="true" signature="162:227" placeholder="select sum(b..detail_checkin..." />
-                <marker date="1382225862099" expanded="true" signature="253:316" placeholder="select sum(n..pembayaran..." />
-              </folding>
+            <state line="2" column="15" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="930">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -178,32 +182,37 @@
         <option value="$PROJECT_DIR$/app/actions/pageoperator/kembali_kunci.php" />
         <option value="$PROJECT_DIR$/app/views/login.php" />
         <option value="$PROJECT_DIR$/app/actions/pageoperator/rating_kamar.php" />
-        <option value="db-console:/3a4074f6/3f099c1d-ea7a-43f8-9f07-a8902d1661e1/" />
         <option value="$PROJECT_DIR$/app/actions/pageoperator/laporan_kamar.php" />
         <option value="$PROJECT_DIR$/app/actions/pageoperator/index.php" />
         <option value="$PROJECT_DIR$/app/actions/pageadmin/ratting_kamar.php" />
         <option value="$PROJECT_DIR$/app/actions/pageadmin/laporan_kamar.php" />
         <option value="dbtable:/3a4074f6/3f099c1d-ea7a-43f8-9f07-a8902d1661e1/db_reservasi_hotel..member" />
         <option value="$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php" />
-        <option value="$PROJECT_DIR$/app/lib/function.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/actions/pageoperator/booking.php" />
         <option value="$PROJECT_DIR$/app/actions/pageoperator/approve.php" />
         <option value="$PROJECT_DIR$/app/actions/kamar/booking.php" />
         <option value="$PROJECT_DIR$/app/actions/checkin/pakai_poin.php" />
-        <option value="$PROJECT_DIR$/app/actions/pageoperator/detail_kunjungan.php" />
         <option value="$PROJECT_DIR$/app/actions/user/registrasi.php" />
         <option value="$PROJECT_DIR$/app/actions/user/profile.php" />
         <option value="$PROJECT_DIR$/app/actions/pageadmin/setting/index.php" />
+        <option value="$PROJECT_DIR$/app/actions/pageoperator/pengunjung/index.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/app/actions/pageadmin/kamar/add.php" />
+        <option value="$PROJECT_DIR$/app/actions/pageoperator/bayar.php" />
+        <option value="$PROJECT_DIR$/app/actions/pageoperator/detail_kunjungan.php" />
+        <option value="$PROJECT_DIR$/app/lib/function.php" />
+        <option value="$PROJECT_DIR$/app/actions/kamar/top.php" />
+        <option value="db-console:/3a4074f6/3f099c1d-ea7a-43f8-9f07-a8902d1661e1/" />
+        <option value="$PROJECT_DIR$/app/actions/kamar/index.php" />
+        <option value="$PROJECT_DIR$/app/actions/index.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
     <option name="y" value="27" />
-    <option name="width" value="1368" />
-    <option name="height" value="742" />
+    <option name="width" value="1366" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -231,7 +240,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -300,82 +308,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pageadmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reservasi_hotel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reservasi_hotel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pageadmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="setting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reservasi_hotel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reservasi_hotel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kamar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reservasi_hotel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reservasi_hotel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="checkin" />
+              <option name="myItemId" value="pageoperator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -425,16 +364,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18957704" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21601209" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22809668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -442,7 +382,6 @@
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -471,228 +410,121 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/actions/kamar/booking.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
-          <folding>
-            <marker date="1395788368774" expanded="true" signature="1123:1223" placeholder="select kelas..kamar..." />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/booking.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="40" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="495">
-          <folding>
-            <marker date="1395112280701" expanded="true" signature="401:501" placeholder="select kelas..kamar..." />
-          </folding>
-        </state>
+        <state line="7" column="40" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="495" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/approve.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="3" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="420">
-          <folding>
-            <marker date="1395197178545" expanded="true" signature="40:272" placeholder="select check..checkin..." />
-            <marker date="1395197178545" expanded="true" signature="63:126" placeholder="select sum(n..pembayaran..." />
-            <marker date="1395197178545" expanded="true" signature="150:215" placeholder="select sum(b..detail_checkin..." />
-            <marker date="1395197178545" expanded="true" signature="419:460" placeholder="select * fro..setting..." />
-            <marker date="1395197178545" expanded="true" signature="766:825" placeholder="select * fro..pengunjung..." />
-          </folding>
-        </state>
+        <state line="10" column="3" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="420" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
-          <folding />
-        </state>
+        <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="1395" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/function.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="286" column="21" selection-start="6922" selection-end="6948" vertical-scroll-proportion="0.0" vertical-offset="4290" max-vertical-offset="9030">
           <folding>
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select max($..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="update $tabl..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..admin..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..member..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..kategori..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select id_ka..artikel..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..artikel..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..kategori_artikel..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select max($..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="update $tabl..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..admin..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..member..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..kategori..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select id_ka..artikel..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..artikel..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..kategori_artikel..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="21" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="765">
-          <folding />
-        </state>
+        <state line="25" column="21" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/kamar/booking.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
-          <folding>
-            <marker date="1395788368774" expanded="true" signature="1123:1223" placeholder="select kelas..kamar..." />
-          </folding>
-        </state>
+        <state line="31" column="30" selection-start="1457" selection-end="1471" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="780" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/booking.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="40" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="495">
-          <folding>
-            <marker date="1395112280701" expanded="true" signature="401:501" placeholder="select kelas..kamar..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/approve.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="3" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="420">
-          <folding>
-            <marker date="1395197178545" expanded="true" signature="40:272" placeholder="select check..checkin..." />
-            <marker date="1395197178545" expanded="true" signature="63:126" placeholder="select sum(n..pembayaran..." />
-            <marker date="1395197178545" expanded="true" signature="150:215" placeholder="select sum(b..detail_checkin..." />
-            <marker date="1395197178545" expanded="true" signature="419:460" placeholder="select * fro..setting..." />
-            <marker date="1395197178545" expanded="true" signature="766:825" placeholder="select * fro..pengunjung..." />
-          </folding>
-        </state>
+        <state line="13" column="22" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="1395">
-          <folding />
-        </state>
+        <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/function.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="286" column="21" selection-start="6922" selection-end="6948" vertical-scroll-proportion="0.0" vertical-offset="4290" max-vertical-offset="9030">
           <folding>
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select max($..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="update $tabl..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..admin..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..member..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..kategori..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select id_ka..artikel..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..artikel..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..kategori_artikel..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select max($..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="update $tabl..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..admin..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..member..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..kategori..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select id_ka..artikel..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..artikel..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..kategori_artikel..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="21" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="765">
-          <folding />
-        </state>
+        <state line="25" column="21" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/kamar/booking.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="30" selection-start="1457" selection-end="1471" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="780">
-          <folding>
-            <marker date="1395788368774" expanded="true" signature="1123:1223" placeholder="select kelas..kamar..." />
-          </folding>
-        </state>
+        <state line="31" column="30" selection-start="1457" selection-end="1471" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="780" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/booking.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <folding>
-            <marker date="1395112280701" expanded="true" signature="401:501" placeholder="select kelas..kamar..." />
-          </folding>
-        </state>
+        <state line="13" column="22" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="495" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="286" column="21" selection-start="6922" selection-end="6948" vertical-scroll-proportion="0.0" vertical-offset="4290" max-vertical-offset="9030">
-          <folding>
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select max($..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="update $tabl..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..admin..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..member..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..kategori..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select id_ka..artikel..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..artikel..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..kategori_artikel..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="21" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/actions/kamar/booking.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="30" selection-start="1457" selection-end="1471" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="780">
-          <folding>
-            <marker date="1395788368774" expanded="true" signature="1123:1223" placeholder="select kelas..kamar..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/booking.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="495">
-          <folding>
-            <marker date="1395112280701" expanded="true" signature="401:501" placeholder="select kelas..kamar..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
-          <folding />
-        </state>
+        <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/function.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="286" column="21" selection-start="6922" selection-end="6948" vertical-scroll-proportion="0.0" vertical-offset="4125" max-vertical-offset="9030">
           <folding>
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select max($..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="update $tabl..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..admin..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..member..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..kategori..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select id_ka..artikel..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..artikel..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..kategori_artikel..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select max($..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="update $tabl..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..admin..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..member..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..kategori..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select id_ka..artikel..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..artikel..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..kategori_artikel..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="765">
-          <folding />
-        </state>
+        <state line="9" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/kamar/cek_kamar.php">
@@ -730,11 +562,6 @@
         <state line="15" column="15" selection-start="491" selection-end="491" vertical-scroll-proportion="0.22677596" vertical-offset="142" max-vertical-offset="690" />
       </provider>
     </entry>
-    <entry file="dbDummy://db-console:/3a4074f6/3f099c1d-ea7a-43f8-9f07-a8902d1661e1/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="29" selection-start="0" selection-end="114" vertical-scroll-proportion="0.09146342" vertical-offset="0" max-vertical-offset="328" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/laporan_kamar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="99" column="26" selection-start="4007" selection-end="4007" vertical-scroll-proportion="0.38243628" vertical-offset="1350" max-vertical-offset="2100" />
@@ -762,91 +589,94 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/pengunjung/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="-13.25" vertical-offset="207" max-vertical-offset="1395">
-          <folding />
-        </state>
+        <state line="35" column="94" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="1395" />
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/3a4074f6/3f099c1d-ea7a-43f8-9f07-a8902d1661e1/db_reservasi_hotel..member">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="21" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="765">
-          <folding />
-        </state>
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/approve.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="10" selection-start="392" selection-end="392" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="420">
-          <folding>
-            <marker date="1395197178545" expanded="true" signature="40:272" placeholder="select check..checkin..." />
-            <marker date="1395197178545" expanded="true" signature="63:126" placeholder="select sum(n..pembayaran..." />
-            <marker date="1395197178545" expanded="true" signature="150:215" placeholder="select sum(b..detail_checkin..." />
-            <marker date="1395197178545" expanded="true" signature="419:460" placeholder="select * fro..setting..." />
-            <marker date="1395197178545" expanded="true" signature="766:825" placeholder="select * fro..pengunjung..." />
-          </folding>
-        </state>
+        <state line="7" column="10" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="420" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/checkin/pesan_sekarang.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="5" selection-start="481" selection-end="481" vertical-scroll-proportion="0.4182156" vertical-offset="0" max-vertical-offset="600">
-          <folding>
-            <marker date="1377402625857" expanded="true" signature="-1:-1" placeholder="select detai..detail_checkin..." />
-            <marker date="1377402625857" expanded="true" signature="-1:-1" placeholder="select max(i..checkin..." />
-          </folding>
-        </state>
+        <state line="15" column="5" selection-start="481" selection-end="481" vertical-scroll-proportion="0.4182156" vertical-offset="0" max-vertical-offset="600" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/checkin/detail_checkin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="33" selection-start="476" selection-end="476" vertical-scroll-proportion="0.30669144" vertical-offset="0" max-vertical-offset="1890">
-          <folding>
-            <marker date="1382227442019" expanded="true" signature="-1:-1" placeholder="select fasil..fasilitas_pengunjung..." />
-            <marker date="1382227442019" expanded="true" signature="-1:-1" placeholder="select detai..detail_checkin..." />
-          </folding>
-        </state>
+        <state line="11" column="33" selection-start="476" selection-end="476" vertical-scroll-proportion="0.30669144" vertical-offset="0" max-vertical-offset="1890" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/checkin/bayar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1425">
-          <folding>
-            <marker date="1377398226538" expanded="true" signature="-1:-1" placeholder="select * fro..checkin..." />
-            <marker date="1377398226538" expanded="true" signature="-1:-1" placeholder="select sum(b..detail_checkin..." />
-            <marker date="1377398226538" expanded="true" signature="-1:-1" placeholder="select * fro..setting..." />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1425" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/kamar/booking.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="510" selection-end="510" vertical-scroll-proportion="-0.625" vertical-offset="120" max-vertical-offset="780">
-          <folding>
-            <marker date="1395788368774" expanded="true" signature="1123:1223" placeholder="select kelas..kamar..." />
-          </folding>
-        </state>
+        <state line="9" column="7" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="780" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/booking.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="26" selection-start="190" selection-end="190" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="495">
+        <state line="5" column="26" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="495" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/checkin/history_checkin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="12" selection-start="673" selection-end="673" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="930">
           <folding>
-            <marker date="1395112280701" expanded="true" signature="401:501" placeholder="select kelas..kamar..." />
+            <marker date="1382225862099" expanded="true" signature="-1:-1" placeholder="select *, (s..checkin..." />
+            <marker date="1382225862099" expanded="true" signature="-1:-1" placeholder="select count..detail_checkin..." />
+            <marker date="1382225862099" expanded="true" signature="-1:-1" placeholder="select sum(b..detail_checkin..." />
+            <marker date="1382225862099" expanded="true" signature="-1:-1" placeholder="select sum(n..pembayaran..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/user/registrasi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="121" selection-start="3166" selection-end="3166" vertical-scroll-proportion="0.0" vertical-offset="841" max-vertical-offset="1665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/user/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="23" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1710">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/pageadmin/setting/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="12" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="660">
+          <folding>
+            <marker date="1395792308160" expanded="true" signature="203:224" placeholder="select * fro..setting..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/pengunjung/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="36" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="1050">
+          <folding>
+            <marker date="1395844317924" expanded="true" signature="418:442" placeholder="select * fro..pengunjung..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/checkin/pakai_poin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="30" selection-start="1956" selection-end="1956" vertical-scroll-proportion="-21.166666" vertical-offset="92" max-vertical-offset="870">
+        <state line="15" column="12" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="870">
           <folding>
             <marker date="1395789926804" expanded="true" signature="238:280" placeholder="select * fro..checkin..." />
             <marker date="1395789926804" expanded="true" signature="318:464" placeholder="select * fro..member..." />
@@ -857,78 +687,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/function.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="452" column="37" selection-start="11382" selection-end="11507" vertical-scroll-proportion="-14.958333" vertical-offset="6421" max-vertical-offset="9030">
-          <folding>
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select max($..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="update $tabl..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..admin..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..member..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..kategori..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select id_ka..artikel..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..artikel..." />
-            <marker date="1394846087374" expanded="true" signature="-1:-1" placeholder="select * fro..kategori_artikel..." />
-          </folding>
+        <state line="10" column="24" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="765">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/actions/checkin/history_checkin.php">
+    <entry file="file://$PROJECT_DIR$/app/actions/pageadmin/kamar/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="12" selection-start="673" selection-end="673" vertical-scroll-proportion="-5.0" vertical-offset="150" max-vertical-offset="930">
+        <state line="2" column="15" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/bayar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1629" selection-end="1728" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="1650">
           <folding>
-            <marker date="1382225862099" expanded="true" signature="60:421" placeholder="select *, (s..checkin..." />
-            <marker date="1382225862099" expanded="true" signature="75:138" placeholder="select count..detail_checkin..." />
-            <marker date="1382225862099" expanded="true" signature="162:227" placeholder="select sum(b..detail_checkin..." />
-            <marker date="1382225862099" expanded="true" signature="253:316" placeholder="select sum(n..pembayaran..." />
+            <marker date="1395872019608" expanded="true" signature="880:922" placeholder="select * fro..checkin..." />
+            <marker date="1395872019608" expanded="true" signature="960:1519" placeholder="select check..checkin..." />
+            <marker date="1395872019608" expanded="true" signature="983:1046" placeholder="select count..detail_checkin..." />
+            <marker date="1395872019608" expanded="true" signature="1071:1151" placeholder="select sum(b..detail_checkin..." />
+            <marker date="1395872019608" expanded="true" signature="1166:1262" placeholder="select sum(b..fasilitas_pengunjung..." />
+            <marker date="1395872019608" expanded="true" signature="1292:1355" placeholder="select sum(n..pembayaran..." />
+            <marker date="1395872019608" expanded="true" signature="1558:1597" placeholder="select * fro..setting..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/pageoperator/detail_kunjungan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="41" selection-start="1434" selection-end="1434" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="3285">
+        <state line="140" column="22" selection-start="6454" selection-end="6454" vertical-scroll-proportion="-7.5" vertical-offset="1920" max-vertical-offset="3315">
           <folding>
-            <element signature="n#style#0;n#div#0;n#h3#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#tfoot#0;n#table#1;n#!!top" expanded="true" />
-            <marker date="1395790754850" expanded="true" signature="76:125" placeholder="delete from ..." />
-            <marker date="1395790754850" expanded="true" signature="411:467" placeholder="update check..." />
-            <marker date="1395790754850" expanded="true" signature="764:827" placeholder="delete from ..." />
-            <marker date="1395790754850" expanded="true" signature="1094:1476" placeholder="select check..checkin..." />
-            <marker date="1395790754850" expanded="true" signature="1165:1245" placeholder="select sum(b..detail_checkin..." />
-            <marker date="1395790754850" expanded="true" signature="1260:1356" placeholder="select sum(b..fasilitas_pengunjung..." />
-            <marker date="1395790754850" expanded="true" signature="1516:1649" placeholder="select detai..detail_checkin..." />
-            <marker date="1395790754850" expanded="true" signature="1684:1837" placeholder="select pemba..pembayaran..." />
-            <marker date="1395790754850" expanded="true" signature="1871:2147" placeholder="select fasil..fasilitas_pengunjung..." />
+            <marker date="1395872111808" expanded="true" signature="76:125" placeholder="delete from ..." />
+            <marker date="1395872111808" expanded="true" signature="411:467" placeholder="update check..." />
+            <marker date="1395872111808" expanded="true" signature="764:827" placeholder="delete from ..." />
+            <marker date="1395872111808" expanded="true" signature="1094:1476" placeholder="select check..checkin..." />
+            <marker date="1395872111808" expanded="true" signature="1165:1245" placeholder="select sum(b..detail_checkin..." />
+            <marker date="1395872111808" expanded="true" signature="1260:1356" placeholder="select sum(b..fasilitas_pengunjung..." />
+            <marker date="1395872111808" expanded="true" signature="1516:1649" placeholder="select detai..detail_checkin..." />
+            <marker date="1395872111808" expanded="true" signature="1684:1837" placeholder="select pemba..pembayaran..." />
+            <marker date="1395872111808" expanded="true" signature="1871:2147" placeholder="select fasil..fasilitas_pengunjung..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/actions/user/registrasi.php">
+    <entry file="file://$PROJECT_DIR$/app/lib/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="121" selection-start="3166" selection-end="3166" vertical-scroll-proportion="-5.5833335" vertical-offset="841" max-vertical-offset="1665">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/actions/user/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="23" selection-start="240" selection-end="240" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="1710">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/actions/pageadmin/setting/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="286" selection-end="286" vertical-scroll-proportion="0.2616279" vertical-offset="0" max-vertical-offset="660">
+        <state line="487" column="21" selection-start="12531" selection-end="12531" vertical-scroll-proportion="0.5210843" vertical-offset="7132" max-vertical-offset="9045">
           <folding>
-            <marker date="1395792308160" expanded="true" signature="203:224" placeholder="select * fro..setting..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select max($..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="update $tabl..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..admin..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..member..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..kategori..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select id_ka..artikel..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..artikel..." />
+            <marker date="1398346684560" expanded="true" signature="-1:-1" placeholder="select * fro..kategori_artikel..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/3a4074f6/3f099c1d-ea7a-43f8-9f07-a8902d1661e1/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="569" selection-end="1000" vertical-scroll-proportion="-5.2413793" vertical-offset="43" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/kamar/top.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="42" selection-start="334" selection-end="343" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="1320">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1398348361257" expanded="true" signature="62:104" placeholder="select * fro..kelas..." />
+            <marker date="1398348361257" expanded="true" signature="139:596" placeholder="select * fro..fasilitas..." />
+            <marker date="1398348361257" expanded="true" signature="175:395" placeholder="select sum(f..fasilitas_pengunjung..." />
+            <marker date="1398348361257" expanded="true" signature="407:587" placeholder="select sum(f..fasilitas_pengunjung..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/kamar/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="765">
+          <folding>
+            <marker date="1398349350582" expanded="true" signature="31:155" placeholder="select *,(se..kelas..." />
+            <marker date="1398349350582" expanded="true" signature="41:97" placeholder="select count..kamar..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="10" selection-start="149" selection-end="149" vertical-scroll-proportion="0.14563107" vertical-offset="0" max-vertical-offset="1395">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1398349534117" expanded="true" signature="55:504" placeholder="select *,(se..kelas..." />
+            <marker date="1398349534117" expanded="true" signature="65:121" placeholder="select count..kamar..." />
+            <marker date="1398349534117" expanded="true" signature="162:337" placeholder="select count..detail_checkin..." />
+            <marker date="1398349534117" expanded="true" signature="348:485" placeholder="select count..detail_checkin..." />
+            <marker date="1398349534117" expanded="true" signature="542:704" placeholder="select *,art..." />
           </folding>
         </state>
       </provider>

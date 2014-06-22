@@ -510,6 +510,7 @@ function getMenuAdmin(){
             array('title'=>'Pengunjung','url'=>'pengunjung'),
             array('title'=>'Rating Kamar','url'=>'rating_kamar'),
             array('title'=>'Laporan Reservasi Per Kamar','url'=>'laporan_kamar'),
+            array('title'=>'Kritik Dan Saran','url'=>'kritik'),
 //            array('title'=>'Pembayaran','url'=>'pembayaran'),
             array('title'=>'Logout','url'=>'../pageadmin/login/logout'),
         );

@@ -1,5 +1,4 @@
 <?php
-
 if($_POST){
         $_POST['personal']['id_member']=$_SESSION['id_user'];
         $is_success         = _insert('kritik', $_POST['personal']);

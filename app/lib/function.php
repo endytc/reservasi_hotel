@@ -545,6 +545,13 @@ function get_tanda_pengenal_list(){
       'KTP','SIM','PASPOR','KTM','Kartu Pelajar'  
     );
 }
+
+function get_status_list(){
+    return array(
+      'Lajang','Menikah'
+    );
+}
+
 /**
  * 
  * @param type $tglAwal d-m-y

@@ -9,6 +9,17 @@ if($_POST){
     if($_POST['promo']['transaksi_max']>0 && $_POST['promo']['transaksi_max']!=""){
         $having.=" and totalbiaya<='".$_POST['promo']['transaksi_max']."'";
     }
+    $where=' 1 ';
+    if(isset($_POST['lajang']) || isset($_POST['menikah'])){
+        $where.=" and ( 0 ";
+        if(isset($_POST['lajang'])){
+            $where.=" or pengunjung.status='lajang'";
+        }
+        if(isset($_POST['menikah'])){
+            $where.=" or pengunjung.status='menikah'";
+        }
+        $where.=")";
+    }
     $memberList=  _select_arr("select *,
             (select sum(detail_checkin.biaya) from detail_checkin 
             join checkin on checkin.id=detail_checkin.id_checkin
@@ -16,7 +27,7 @@ if($_POST){
             ) as totalbiaya,pengunjung.id as id
              from pengunjung
             join member on member.id_pengunjung=pengunjung.id
-            where member.email<>'' and member.email is not null
+            where member.email<>'' and member.email is not null and $where
             having $having");
     
     $is_success         = _insert('promo', $_POST['promo']);
@@ -88,6 +99,18 @@ $fasilitasList=  _select_arr("select * from fasilitas");
                         <input type="text" name="promo[transaksi_max]" class="span2 number" style="text-align: right"/>
                     </div>    
                 </div>
+				
+				<div>
+				<div class="control-group">
+                    <label class="control-label required">Status</label>                
+                    <div class="controls">                        					
+						<input type="checkbox" name="lajang" value="Lajang"> Lajang<br>
+						<input type="checkbox" name="menikah" value="Menikah"> Menikah 
+                    </div>    
+                </div>
+				</div>
+				
+				
                 <div class="control-group">
                         <textarea name="promo[isi]" class="tinymce" style="width: 100%"></textarea>
                 </div>

@@ -7,7 +7,7 @@
 				<div class="container">
 					<ul class="pull-right inline">
                                             <?php if(is_login() && is_member()){?>    
-						<li><a class="invarseColor" href="<?php echo app_base_url('user/profile')?>">My Account</a></li>
+						<li><a class="invarseColor" href="<?php echo app_base_url('user/profile')?>">Akun</a></li>
 						<li class="divider-vertical"></li>
                                                 <?php
                                                 $user=  get_user_login();
@@ -16,8 +16,10 @@
 						<li><a class="invarseColor" href="<?php echo app_base_url('checkin/detail_checkin')?>">List Pesanan (<?php echo $jumlahPesanan['jumlah']?>)</a></li>
 						<li class="divider-vertical"></li>
 						<li><a class="invarseColor" href="<?php echo app_base_url('checkin/history_checkin')?>">History</a></li>
-                                                <li class="divider-vertical"></li>
-                                                <li><a class="invarseColor" href="<?php echo app_base_url('user/logout')?>">Logout</a></li>
+                        <li class="divider-vertical"></li>
+						<li><a class="invarseColor" href="<?php echo app_base_url('checkin/kritiksaran')?>">Kritik Saran</a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a class="invarseColor" href="<?php echo app_base_url('user/logout')?>">Logout</a></li>
                                              <?php }?>
 					</ul>
 					<p>
@@ -103,8 +105,15 @@
                                                         }?>
                                                     </li><?php
                                                 }
-                                                echo (is_login())?'<li><a href="'.  app_base_url('user/logout').'">Logout</a></li>':'';
+                                                
                                                 ?>
+                                                <?php if(is_login() && is_member()){?>  
+                                                <li>
+                                                    <a href="<?php echo app_base_url('kepuasan') ?>">
+                                                    Survey Kepuasan
+                                                    </a>
+                                                        </li>
+                                                <?php }?>  
                                             </ul><!--end nav-->
 				</div><!--end container-->
 			</div><!--end mainNav-->	
@@ -148,7 +157,7 @@
 						<li class="electron"></li>
 						<li class="discover"></li>
 					</ul>
-					<p>© Copyrights 2013 Skripsi TIF UIN Sunan Kalijaga</p>
+					<p>© Copyrights 2014 Skripsi TIF UIN Sunan Kalijaga</p>
 				</div>
 			</div>
 		</div>

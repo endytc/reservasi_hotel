@@ -46,9 +46,11 @@ include 'app/actions/kamar/top.php';
                         <a href="<?php echo app_base_url().'/kamar/cek_kamar?id_kelas='.$kelas['id']?>"class="btn btn-primary btn-small" data-title="+Pesan Kamar" data-placement="top" rel="tooltip">
                             <i class="icon-shopping-cart"></i>
                         </a>
-                        <a href="<?php echo app_base_url().'/kamar/add_star?id_kelas='.$kelas['id']?>" class="btn btn-small" data-title="+To WishList" data-placement="top" rel="tooltip">
-                            <i class="icon-heart"></i>
-                        </a>
+                        <?php if(is_login()): ?>
+                            <a href="<?php echo app_base_url().'/kamar/add_star?id_kelas='.$kelas['id']?>" class="btn btn-small" data-title="+Rate" data-placement="top" rel="tooltip">
+                                <i class="icon-heart"></i>
+                            </a>
+                        <?php endif;?>
                     </div>
                     <ul class="rating">
                         <?php

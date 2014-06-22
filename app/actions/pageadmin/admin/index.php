@@ -6,8 +6,10 @@
 ?>
 <h3>Admin</h3>
 <hr>
+<!--
 <a target="ajax-modal" href="<?php echo app_base_url('pageadmin/admin/add')?>" class="btn btn-primary"><i class="icon icon-plus"></i> Tambah</a>
-<br>
+<br> 
+-->
 <br>
 <table class="table table-striped table-bordered bootstrap-datatable table">
     <thead>
@@ -28,9 +30,9 @@
         <td><?php echo $data['nama'];?></td>
         <td><?php echo $data['username']?></td>
         <td class="button">
-            <a target="ajax-modal" href="<?php echo app_base_url("pageadmin/admin/edit?id=$data[id]")?>" class="edit"><i class="icon icon-edit"></i></a>
-            <a href="<?php echo app_base_url("pageadmin/admin/delete?id=$data[id]")?>" onclick="return confirm('<?php echo "Apakah anda yakin akan menghapus admin $data[nama]?" ?>')"class="hapus"><i class="icon icon-remove"></i></a>
-        </td>
+            <a target="ajax-modal" href="<?php echo app_base_url("pageadmin/admin/edit?id=$data[id]")?>" class="edit"><i class="icon icon-edit"></i>edit</a>
+         <!--   <a href="<?php echo app_base_url("pageadmin/admin/delete?id=$data[id]")?>" onclick="return confirm('<?php echo "Apakah anda yakin akan menghapus admin $data[nama]?" ?>')"class="hapus"><i class="icon icon-remove"></i></a>
+       --> </td>
     </tr>    
     </tbody>
         <?php

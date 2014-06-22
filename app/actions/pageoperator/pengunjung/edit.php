@@ -44,6 +44,24 @@ if($_POST){
                         <input type="text" class="required" name="pengunjung[no_hp]" value="<?php echo $pengunjung['no_hp']?>">
                     </div>    
                 </div>
+				<div class="control-group">
+                    <label class="control-label required">Alamat <span class="required">*</span></label>                
+                    <div class="controls">
+                        <input type="text" class="required" name="pengunjung[alamat]" value="<?php echo $pengunjung['alamat']?>">
+                    </div>    
+                </div>
+				<div class="control-group">
+                    <label class="control-label required">Status Berkeluarga <span class="required">*</span></label>                
+                    <div class="controls">
+                        <input type="text" class="required" name="pengunjung[status]" value="<?php echo $pengunjung['status']?>">
+                    </div>    
+                </div>
+				<div class="control-group">
+                    <label class="control-label required">Jumlah Poin <span class="required">*</span></label>                
+                    <div class="controls">
+                        <input type="text" class="required" name="pengunjung[jumlah_poin]" value="<?php echo $pengunjung['jumlah_poin']?>">
+                    </div>    
+                </div>
             </fieldset>
         </div><!-- form -->
 </div>

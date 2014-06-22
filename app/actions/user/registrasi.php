@@ -50,7 +50,35 @@
                     <input type="text" name="personal[no_hp]"class="required" id="" placeholder="">
                 </div>
             </div>
-
+			<div class="control-group ">
+                <label class="control-label" >Pekerjaan </label>
+                <div class="controls">
+                    <input type="text" name="personal[pekerjaan]" class="required" id="" placeholder="">
+                </div>
+            </div>
+			
+			<div class="control-group ">
+                <label class="control-label" >Status</label>
+                <div class="controls">
+                    <select name="personal[status]" class="required">
+                        <option value="">- Pilih Status -</option>
+                        <?php
+                        foreach(get_status_list() as $status){
+                            echo "<option value='$status'>$status</option>";
+                        }
+                        ?>
+                    </select>
+                </div>
+            </div>
+            
+			<div class="control-group ">
+                <label class="control-label" >Jumlah anak </label>
+                <div class="controls">
+                    <input type="text" name="personal[anak]" class="required" id="" placeholder="">
+                </div>
+            </div>
+			
+			
             <div class="control-group ">
             <legend>&nbsp;&nbsp;&nbsp;&nbsp;2. Akun Untuk Login</legend>
 

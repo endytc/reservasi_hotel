@@ -56,6 +56,26 @@ if($_POST){
                     <input type="text" name="personal[no_hp]"value="<?php echo $user['no_hp']?>"class="required" id="" placeholder="">
                 </div>
             </div>
+			<div class="control-group ">
+                <label class="control-label" >Pekerjaan </label>
+                <div class="controls">
+                    <input type="text" name="personal[pekerjaan]" value="<?php echo $user['pekerjaan']?>"  class="required" id="" placeholder="">
+                </div>
+            </div>
+			<div class="control-group ">
+                <label class="control-label" >Status Berkeluarga</label>
+                <div class="controls">
+                    <input type="text" name="personal[status]" value="<?php echo $user['status']?>"class="required" id="" placeholder="">
+                </div>
+            </div>
+			<div class="control-group ">
+                <label class="control-label" >Jumlah anak </label>
+                <div class="controls">
+                    <input type="text" name="personal[anak]" value="<?php echo $user['anak']?>"  class="required" id="" placeholder="">
+                </div>
+            </div>
+			
+			
 
             <div class="control-group ">
             <legend>&nbsp;&nbsp;&nbsp;&nbsp;2. Akun Untuk Login</legend>
